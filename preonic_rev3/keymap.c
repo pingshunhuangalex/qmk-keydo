@@ -1,4 +1,5 @@
 #include QMK_KEYBOARD_H
+#include "muse.h"
 
 enum preonic_layers {
   _BASE,
@@ -116,7 +117,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * | Ctrl  |  F1   |  F2   |  F3   |  F4   |  F5   |  F6   |  F7   |  F8   |  F9   |  F10  | Enter |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * | Shift |  F11  |  F12  | Brt-  | Brt+  |       |       |       | Play  | Stop  | Mute  | _BASE |
+ * | Shift |  F11  |  F12  | Brt-  | Brt+  |       |EEPRST |       | Play  | Stop  | Mute  | _BASE |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Esc  |  _FN  |  GUI  |  Alt  | Bksp  | _NUM  | _SYM  | _NAV  | Prev  | Vol-  | Vol+  | Next  |
  * `-----------------------------------------------------------------------------------------------'
@@ -125,7 +126,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_SLEP,
   _______, KC_CAPS, KC_NLCK, KC_SLCK, XXXXXXX, RESET,   DEBUG,   XXXXXXX, KC_PSCR, KC_APP,  KC_PAUS, KC_CALC,
   _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  _______,
-  _______, KC_F11,  KC_F12,  KC_BRID, KC_BRIU, XXXXXXX, XXXXXXX, XXXXXXX, KC_MPLY, KC_MSTP, KC_MUTE, SET_BASE,
+  _______, KC_F11,  KC_F12,  KC_BRID, KC_BRIU, XXXXXXX, EEP_RST, XXXXXXX, KC_MPLY, KC_MSTP, KC_MUTE, SET_BASE,
   _______, _______, _______, _______, _______, SET_NUM, SET_SYM, SET_NAV, KC_MPRV, KC_VOLD, KC_VOLU, KC_MNXT
 ),
 

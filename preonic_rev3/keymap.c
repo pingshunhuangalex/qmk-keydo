@@ -111,23 +111,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 /* Layer 4: FUNCTION (Fn)
  * ,-----------------------------------------------------------------------------------------------.
- * | Sleep |       |       |       |       |       |       |       |       |       |       |  Del  |
+ * | Reset | Debug |       |       |       |       |       |       |       |       | Wake  | Sleep |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Tab  | CAPS  | NLCK  | SLCK  |       | Reset | Debug |       | Print | Menu  | Pause | _BASE |
+ * |  Tab  | CAPS  | NLCK  | SLCK  |       |       |       |       | Print | Menu  | Pause | _BASE |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * | Ctrl  |  F1   |  F2   |  F3   |  F4   |  F5   |  F6   |  F7   |  F8   |  F9   |  F10  | Calc  |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  GUI  |  F11  |  F12  | Brt-  | Brt+  |       |EEPRST |       | Stop  | Play  | Mute  |  _FN  |
+ * |  GUI  |  F11  |  F12  | Brt-  | Brt+  |       |       | Stop  | Play  |Rewind |Forward|  _FN  |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Esc  | Prev  | Next  |  Alt  | _NUM  | Bksp  | _NAV  | _SYM  | Shift | Vol+  | Vol-  | Enter |
+ * |EEPRST | Prev  | Next  |  Alt  | _NUM  | Bksp  | _NAV  | _SYM  | Shift | Vol+  | Vol-  | Mute  |
  * `-----------------------------------------------------------------------------------------------'
  */
 [_FN] = LAYOUT_preonic_grid(
-  KC_SLEP, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-  _______, KC_CAPS, KC_NLCK, KC_SLCK, XXXXXXX, RESET,   DEBUG,   XXXXXXX, KC_PSCR, KC_APP,  KC_PAUS, SET_BASE,
+  RESET,   DEBUG,   XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_WAKE, KC_SLEP,
+  _______, KC_CAPS, KC_NLCK, KC_SLCK, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PSCR, KC_APP,  KC_PAUS, SET_BASE,
   _______, KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_CALC,
-  _______, KC_F11,  KC_F12,  KC_BRID, KC_BRIU, XXXXXXX, EEP_RST, XXXXXXX, KC_MSTP, KC_MPLY, KC_MUTE, SET_FN,
-  _______, KC_MPRV, KC_MNXT, _______, SET_NUM, _______, SET_NAV, SET_SYM, _______, KC_VOLU, KC_VOLD, _______
+  _______, KC_F11,  KC_F12,  KC_BRID, KC_BRIU, XXXXXXX, XXXXXXX, KC_MSTP, KC_MPLY, KC_MRWD, KC_MFFD, SET_FN,
+  EEP_RST, KC_MPRV, KC_MNXT, _______, SET_NUM, _______, SET_NAV, SET_SYM, _______, KC_VOLU, KC_VOLD, KC_MUTE
 ),
 
 };

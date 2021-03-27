@@ -22,7 +22,7 @@ enum custom_keycodes {
 #define OSL_SYM OSL(_SYM)
 #define SET_SYM TO(_SYM)
 
-#define SPC_NAV LT(_NAV, KC_SPACE)
+#define SPC_NAV LT(_NAV, KC_SPC)
 #define SET_NAV TO(_NAV)
 
 #define OSL_FN OSL(_FN)
@@ -32,10 +32,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
   switch (keycode) {
     case DEL_HOM:
       if (record->event.pressed) {
-        register_code(KC_LSFT);
-        register_code(KC_HOME);
-        unregister_code(KC_HOME);
-        unregister_code(KC_LSFT);
+        tap_code16(S(KC_HOME));
         register_code(KC_BSPC);
       } else {
         unregister_code(KC_BSPC);
@@ -45,10 +42,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
     case DEL_END:
       if (record->event.pressed) {
-        register_code(KC_LSFT);
-        register_code(KC_END);
-        unregister_code(KC_END);
-        unregister_code(KC_LSFT);
+        tap_code16(S(KC_END));
         register_code(KC_DEL);
       } else {
         unregister_code(KC_DEL);

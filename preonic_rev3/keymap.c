@@ -78,22 +78,22 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Layer 1: NUMBER (Lower)
   * ,-----------------------------------------------------------------------------------------------.
-  * |       |       |       |       |   +   |   -   |   *   |   /   |       |       |       |  Del  |
+  * |       |       |       |   =   |   +   |   -   |   *   |   /   |       |       |       |  Del  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  Tab  |       |       |       |   7   |   8   |   9   |   =   |       |       |       | _BASE |
+  * |  Tab  |       |       |   ,   |   7   |   8   |   9   |   .   |       |       |       | _BASE |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
   * | Ctrl  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |   0   |       |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  GUI  |       |       |       |   1   |   2   |   3   |   0   |   ,   |   .   |       |  _FN  |
+  * |  GUI  |       |       |   0   |   1   |   2   |   3   | Enter |       |       |       |  _FN  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
   * |  Esc  | Left  | Right |  Alt  | _NUM  | Bksp  | _NAV  | _SYM  | Shift |  Up   | Down  | Enter |
   * `-----------------------------------------------------------------------------------------------'
   */
   [_NUM] = LAYOUT_preonic_grid(
-    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PPLS, KC_PMNS, KC_PAST, KC_PSLS, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, KC_P7,   KC_P8,   KC_P9,   KC_PEQL, XXXXXXX, XXXXXXX, XXXXXXX, SET_BASE,
+    XXXXXXX, XXXXXXX, XXXXXXX, KC_PEQL, KC_PPLS, KC_PMNS, KC_PAST, KC_PSLS, XXXXXXX, XXXXXXX, XXXXXXX, _______,
+    _______, XXXXXXX, XXXXXXX, KC_PCMM, KC_P7,   KC_P8,   KC_P9,   KC_PDOT, XXXXXXX, XXXXXXX, XXXXXXX, SET_BASE,
     _______, KC_P1,   KC_P2,   KC_P3,   KC_P4,   KC_P5,   KC_P6,   KC_P7,   KC_P8,   KC_P9,   KC_P0,   XXXXXXX,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, KC_P1,   KC_P2,   KC_P3,   KC_P0,   KC_PCMM, KC_PDOT, XXXXXXX, SET_FN,
+    _______, XXXXXXX, XXXXXXX, KC_P0,   KC_P1,   KC_P2,   KC_P3,   KC_PENT, XXXXXXX, XXXXXXX, XXXXXXX, SET_FN,
     _______, _______, _______, _______, SET_NUM, _______, SET_NAV, SET_SYM, _______, _______, _______, _______
   ),
 

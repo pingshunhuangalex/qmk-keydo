@@ -4,5 +4,6 @@
 #define TAP_CODE_DELAY 10    // Sets the delay between register_code and unregister_code, if you're having issues with it registering properly (common on VUSB boards). The value is in milliseconds.
 
 #ifdef AUDIO_ENABLE
-    #define STARTUP_SONG SONG(PREONIC_SOUND)
+    // #define STARTUP_SONG SONG(PREONIC_SOUND)
+    #define STARTUP_SONG SONG(NO_SOUND)
 #endif

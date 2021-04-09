@@ -90,10 +90,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * `-----------------------------------------------------------------------------------------------'
   */
   [_NUM] = LAYOUT_preonic_grid(
-    XXXXXXX, XXXXXXX, XXXXXXX, KC_PEQL, KC_PPLS, KC_PMNS, KC_PAST, KC_PSLS, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-    _______, XXXXXXX, XXXXXXX, KC_PCMM, KC_P7,   KC_P8,   KC_P9,   KC_PDOT, XXXXXXX, XXXXXXX, XXXXXXX, SET_BASE,
-    _______, KC_P1,   KC_P2,   KC_P3,   KC_P4,   KC_P5,   KC_P6,   KC_P7,   KC_P8,   KC_P9,   KC_P0,   XXXXXXX,
-    _______, XXXXXXX, XXXXXXX, KC_P0,   KC_P1,   KC_P2,   KC_P3,   KC_PENT, XXXXXXX, XXXXXXX, XXXXXXX, SET_FN,
+    XXXXXXX, XXXXXXX, XXXXXXX, KC_EQL,  KC_PLUS, KC_MINS, KC_ASTR, KC_SLSH, XXXXXXX, XXXXXXX, XXXXXXX, _______,
+    _______, XXXXXXX, XXXXXXX, KC_COMM, KC_7,    KC_8,    KC_9,    KC_DOT,  XXXXXXX, XXXXXXX, XXXXXXX, SET_BASE,
+    _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    XXXXXXX,
+    _______, XXXXXXX, XXXXXXX, KC_0,    KC_1,    KC_2,    KC_3,    KC_ENT,  XXXXXXX, XXXXXXX, XXXXXXX, SET_FN,
     _______, _______, _______, _______, _______, _______, SET_NUM, SET_NAV, SET_SYM, _______, _______, _______
   ),
 

@@ -80,20 +80,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * ,-----------------------------------------------------------------------------------------------.
   * |       |       |       |   =   |   +   |   -   |   *   |   /   |       |       |       |  Del  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  Tab  |       |       |   ,   |   7   |   8   |   9   |   .   |       |       |       | _NAV  |
+  * |  Tab  |       |       | Enter |   7   |   8   |   9   |   ,   |       |       |       | _NAV  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
   * | Ctrl  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |   0   |       |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  GUI  |       |       |   0   |   1   |   2   |   3   | Enter |       |       |       |  _FN  |
+  * |  GUI  |       |       |   0   |   1   |   2   |   3   |   .   |       |       |       |  _FN  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
   * |  Esc  | Left  | Right | _NUM  | Bksp  |  Alt  | Shift | _BASE | _SYM  |  Up   | Down  | Enter |
   * `-----------------------------------------------------------------------------------------------'
   */
   [_NUM] = LAYOUT_preonic_grid(
     XXXXXXX, XXXXXXX, XXXXXXX, KC_EQL,  KC_PLUS, KC_MINS, KC_ASTR, KC_SLSH, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-    _______, XXXXXXX, XXXXXXX, KC_COMM, KC_7,    KC_8,    KC_9,    KC_DOT,  XXXXXXX, XXXXXXX, XXXXXXX, SET_NAV,
+    _______, XXXXXXX, XXXXXXX, KC_ENT,  KC_7,    KC_8,    KC_9,    KC_COMM, XXXXXXX, XXXXXXX, XXXXXXX, SET_NAV,
     _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    XXXXXXX,
-    _______, XXXXXXX, XXXXXXX, KC_0,    KC_1,    KC_2,    KC_3,    KC_ENT,  XXXXXXX, XXXXXXX, XXXXXXX, SET_FN,
+    _______, XXXXXXX, XXXXXXX, KC_0,    KC_1,    KC_2,    KC_3,    KC_DOT,  XXXXXXX, XXXXXXX, XXXXXXX, SET_FN,
     _______, _______, _______, SET_NUM, _______, _______, _______, SET_BAS, SET_SYM, _______, _______, _______
   ),
 
@@ -101,20 +101,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * ,-----------------------------------------------------------------------------------------------.
   * |       |       |       |       |       |       |       |       |       |       |       |  Del  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  Tab  |   =   |   +   |   -   |   _   |       |       |   <   |   >   |   :   |   ?   | _NAV  |
+  * |  Tab  |       |   \   |   |   |   ?   |       |       |   :   |   `   |   ~   |       | _NAV  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * | Ctrl  |   !   |   @   |   #   |   $   |   %   |   ^   |   &   |   *   |   (   |   )   |       |
+  * | Ctrl  |   !   |   @   |   #   |   $   |   %   |   ^   |   &   |   *   |   (   |   )   |   "   |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  GUI  |   `   |   ~   |   '   |   "   |   \   |   |   |   {   |   }   |   [   |   ]   |  _FN  |
+  * |  GUI  |   =   |   +   |   -   |   _   |   <   |   >   |   {   |   }   |   [   |   ]   |  _FN  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
   * |  Esc  | Left  | Right | _NUM  | Bksp  |  Alt  | Shift | _BASE | _SYM  |  Up   | Down  | Enter |
   * `-----------------------------------------------------------------------------------------------'
   */
   [_SYM] = LAYOUT_preonic_grid(
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-    _______, KC_EQL,  KC_PLUS, KC_MINS, KC_UNDS, XXXXXXX, XXXXXXX, KC_LT,   KC_GT,   KC_COLN, KC_QUES, SET_NAV,
-    _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, XXXXXXX,
-    _______, KC_GRV,  KC_TILD, KC_QUOT, KC_DQUO, KC_BSLS, KC_PIPE, KC_LCBR, KC_RCBR, KC_LBRC, KC_RBRC, SET_FN,
+    _______, XXXXXXX, KC_BSLS, KC_PIPE, KC_QUES, XXXXXXX, XXXXXXX, KC_COLN, KC_GRV,  KC_TILD, XXXXXXX, SET_NAV,
+    _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_DQUO,
+    _______, KC_EQL,  KC_PLUS, KC_MINS, KC_UNDS, KC_LT,   KC_GT,   KC_LCBR, KC_RCBR, KC_LBRC, KC_RBRC, SET_FN,
     _______, _______, _______, SET_NUM, _______, _______, _______, SET_BAS, SET_SYM, _______, _______, _______
   ),
 

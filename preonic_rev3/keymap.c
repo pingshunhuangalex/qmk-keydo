@@ -120,23 +120,23 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
   /* Layer 3: NAVIGATION + NUMPAD (Space Fn)
   * ,-----------------------------------------------------------------------------------------------.
-  * |       |       |       |       |       |       |       | NLCK  |   =   |   /   |   *   |   -   |
+  * |       |       |       |       |       |       |   %   | NLCK  |   /   |   *   |   -   |  Del  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  Tab  |  Ins  | PgUp  |  Up   | PgDn  |  Del  |       |   (   |   7   |   8   |   9   |   +   |
+  * |  Tab  |  Ins  | PgUp  |  Up   | PgDn  |  Del  |   (   |   7   |   8   |   9   |   +   | _BASE |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * | Ctrl  | Home  | Left  | Down  | Right |  End  |       |   )   |   4   |   5   |   6   |   +   |
+  * | Ctrl  | Home  | Left  | Down  | Right |  End  |   )   |   4   |   5   |   6   |   +   |   =   |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  GUI  |       |       |       |DEL_HOM|DEL_END|       |   ,   |   1   |   2   |   3   | Enter |
+  * |  GUI  |       |       |       |DEL_HOM|DEL_END|   ,   |   1   |   2   |   3   | Enter | _BASE |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  Esc  | Left  | Right | _NAV  | Bksp  |  Alt  | Shift | _BASE |   0   | Space |   .   | Enter |
+  * |  Esc  | Left  | Right | _NAV  | Bksp  |  Alt  | Shift |   0   | Space |   .   | Enter | Enter |
   * `-----------------------------------------------------------------------------------------------'
   */
   [_NAV] = LAYOUT_preonic_grid(
-    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_NLCK, KC_PEQL, KC_PSLS, KC_PAST, KC_PMNS,
-    _______, KC_INS,  KC_PGUP, KC_UP,   KC_PGDN, KC_DEL,  XXXXXXX, KC_LPRN, KC_P7,   KC_P8,   KC_P9,   KC_PPLS,
-    _______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  XXXXXXX, KC_RPRN, KC_P4,   KC_P5,   KC_P6,   KC_PPLS,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, DEL_HOM, DEL_END, XXXXXXX, KC_COMM, KC_P1,   KC_P2,   KC_P3,   KC_PENT,
-    _______, _______, _______, SET_NAV, _______, _______, _______, SET_BAS, KC_P0,   KC_SPC,  KC_PDOT, _______
+    XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PERC, KC_NLCK, KC_PSLS, KC_PAST, KC_PMNS, _______,
+    _______, KC_INS,  KC_PGUP, KC_UP,   KC_PGDN, KC_DEL,  KC_LPRN, KC_P7,   KC_P8,   KC_P9,   KC_PPLS, SET_BAS,
+    _______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  KC_RPRN, KC_P4,   KC_P5,   KC_P6,   KC_PPLS, KC_PEQL,
+    _______, XXXXXXX, XXXXXXX, XXXXXXX, DEL_HOM, DEL_END, KC_COMM, KC_P1,   KC_P2,   KC_P3,   KC_PENT, SET_BAS,
+    _______, _______, _______, SET_NAV, _______, _______, _______, KC_P0,   KC_SPC,  KC_PDOT, KC_PENT, _______
   ),
 
   /* Layer 4: FUNCTION (Fn)

@@ -80,7 +80,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * ,-----------------------------------------------------------------------------------------------.
   * |       |       |       |       |       |       |       |       |       |       |       |  Del  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  Tab  |       |       |       |       |       |       |       |       |       |       | _BASE |
+  * |  Tab  |       |       |       |       |       |       |       |       |       |       | _NAV  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
   * | Ctrl  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |   8   |   9   |   0   |   =   |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
@@ -91,7 +91,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   */
   [_NUM] = LAYOUT_preonic_grid(
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, SET_BAS,
+    _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, SET_NAV,
     _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_EQL,
     _______, KC_SLSH, KC_ASTR, KC_MINS, KC_PLUS, XXXXXXX, XXXXXXX, KC_DOT,  KC_COMM, XXXXXXX, XXXXXXX, SET_BAS,
     _______, _______, _______, SET_NUM, _______, _______, _______, SET_BAS, SET_BAS, _______, _______, _______

@@ -86,7 +86,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
   * |  GUI  |   /   |   *   |   -   |   +   |       |       |   .   |   ,   |       |       | _BASE |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  Esc  | Left  | Right | _NAV  | Bksp  |  Alt  | Shift | _BASE | _BASE | Down  |  Up   | Enter |
+  * |  Esc  | Left  | Right | _NUM  | Bksp  |  Alt  | Shift | _BASE | _BASE | Down  |  Up   | Enter |
   * `-----------------------------------------------------------------------------------------------'
   */
   [_NUM] = LAYOUT_preonic_grid(
@@ -94,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, SET_BAS,
     _______, KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_EQL,
     _______, KC_SLSH, KC_ASTR, KC_MINS, KC_PLUS, XXXXXXX, XXXXXXX, KC_DOT,  KC_COMM, XXXXXXX, XXXXXXX, SET_BAS,
-    _______, _______, _______, SET_NAV, _______, _______, _______, SET_BAS, SET_BAS, _______, _______, _______
+    _______, _______, _______, SET_NUM, _______, _______, _______, SET_BAS, SET_BAS, _______, _______, _______
   ),
 
   /* Layer 2: SYMBOL (Raise)
@@ -122,21 +122,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   * ,-----------------------------------------------------------------------------------------------.
   * |       |       |       |       |       |       |   %   | NLCK  |   /   |   *   |   -   |  Del  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  Tab  |  Ins  | PgUp  |  Up   | PgDn  |  Del  |   (   |   7   |   8   |   9   |   +   | _BASE |
+  * |  Tab  |  Ins  | PgUp  |  Up   | PgDn  |  Del  |   (   |   7   |   8   |   9   |   +   | _NAV  |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
   * | Ctrl  | Home  | Left  | Down  | Right |  End  |   )   |   4   |   5   |   6   |   +   |   =   |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
   * |  GUI  |       |       |       |DEL_HOM|DEL_END|   ,   |   1   |   2   |   3   | Enter | _BASE |
   * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-  * |  Esc  | Left  | Right | _NAV  | Bksp  |  Alt  | Shift |   0   | Space |   .   | Enter | Enter |
+  * |  Esc  | Left  | Right | _BASE | Bksp  |  Alt  | Shift |   0   | Space |   .   | Enter | Enter |
   * `-----------------------------------------------------------------------------------------------'
   */
   [_NAV] = LAYOUT_preonic_grid(
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_PERC, KC_NLCK, KC_PSLS, KC_PAST, KC_PMNS, _______,
-    _______, KC_INS,  KC_PGUP, KC_UP,   KC_PGDN, KC_DEL,  KC_LPRN, KC_P7,   KC_P8,   KC_P9,   KC_PPLS, SET_BAS,
+    _______, KC_INS,  KC_PGUP, KC_UP,   KC_PGDN, KC_DEL,  KC_LPRN, KC_P7,   KC_P8,   KC_P9,   KC_PPLS, SET_NAV,
     _______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  KC_RPRN, KC_P4,   KC_P5,   KC_P6,   KC_PPLS, KC_PEQL,
     _______, XXXXXXX, XXXXXXX, XXXXXXX, DEL_HOM, DEL_END, KC_COMM, KC_P1,   KC_P2,   KC_P3,   KC_PENT, SET_BAS,
-    _______, _______, _______, SET_NAV, _______, _______, _______, KC_P0,   KC_SPC,  KC_PDOT, KC_PENT, _______
+    _______, _______, _______, SET_BAS, _______, _______, _______, KC_P0,   KC_SPC,  KC_PDOT, KC_PENT, _______
   ),
 
   /* Layer 4: FUNCTION (Fn)

@@ -49,20 +49,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    * ,-----------------------------------------------------------------------------------------------.
    * |       |       |       |       |       |       |       |       |       |       |       |  Del  |
    * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-   * |  Tab  |       |   \   |   |   |   ?   |       |       |   :   |   `   |   ~   |       | _BASE |
+   * |  Tab  |       |   %   |   [   |   ]   |       |       |   `   |   +   |   $   |       | _BASE |
    * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-   * | Ctrl  |   !   |   @   |   #   |   $   |   %   |   ^   |   &   |   *   |   (   |   )   |   "   |
+   * | Ctrl  |   <   |   >   |   (   |   )   |   |   |   &   |   -   |   =   |   _   |   *   |   "   |
    * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-   * |  GUI  |   =   |   +   |   -   |   _   |   <   |   >   |   {   |   }   |   [   |   ]   | _BASE |
+   * |  GUI  |   ~   |   #   |   {   |   }   |   \   |   !   |   ?   |   :   |   @   |   ^   | _BASE |
    * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
    * |  Esc  | Left  | Right | _BASE | Bksp  |  Alt  | Shift | _BASE | _SYM  | Down  |  Up   | Enter |
    * `-----------------------------------------------------------------------------------------------'
    */
   [_SYM] = LAYOUT_preonic_grid(
     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-    _______, XXXXXXX, KC_BSLS, KC_PIPE, KC_QUES, XXXXXXX, XXXXXXX, KC_COLN, KC_GRV,  KC_TILD, XXXXXXX, SET_BAS,
-    _______, KC_EXLM, KC_AT,   KC_HASH, KC_DLR,  KC_PERC, KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN, KC_DQUO,
-    _______, KC_EQL,  KC_PLUS, KC_MINS, KC_UNDS, KC_LT,   KC_GT,   KC_LCBR, KC_RCBR, KC_LBRC, KC_RBRC, SET_BAS,
+    _______, XXXXXXX, KC_PERC, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, KC_GRV,  KC_PLUS, KC_DLR,  XXXXXXX, SET_BAS,
+    _______, KC_LT,   KC_GT,   KC_LPRN, KC_RPRN, KC_PIPE, KC_AMPR, KC_MINS, KC_EQL,  KC_UNDS, KC_ASTR, KC_DQUO,
+    _______, KC_TILD, KC_HASH, KC_LCBR, KC_RCBR, KC_BSLS, KC_EXLM, KC_QUES, KC_COLN, KC_AT,   KC_CIRC, SET_BAS,
     _______, _______, _______, SET_BAS, _______, _______, _______, SET_BAS, SET_SYM, _______, _______, _______
   ),
 

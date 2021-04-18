@@ -27,26 +27,26 @@ enum custom_keycodes {
 #define SET_FN TO(_FN)
 
 // Home Row Mods
-#define GUI_A LGUI_T(KC_A)
-#define ALT_R LALT_T(KC_R)
-#define SFT_S LSFT_T(KC_S)
-#define CTL_T LCTL_T(KC_T)
+#define HGUI_A LGUI_T(KC_A)
+#define HALT_R LALT_T(KC_R)
+#define HSFT_S LSFT_T(KC_S)
+#define HCTL_T LCTL_T(KC_T)
 
-#define CTL_N RCTL_T(KC_N)
-#define SFT_E RSFT_T(KC_E)
-#define ALT_I RALT_T(KC_I)
-#define GUI_O RGUI_T(KC_O)
+#define HCTL_N RCTL_T(KC_N)
+#define HSFT_E RSFT_T(KC_E)
+#define HALT_I RALT_T(KC_I)
+#define HGUI_O RGUI_T(KC_O)
 
 uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case GUI_A:
-        case ALT_R:
-        case SFT_S:
-        case CTL_T:
-        case CTL_N:
-        case SFT_E:
-        case ALT_I:
-        case GUI_O:
+        case HGUI_A:
+        case HALT_R:
+        case HSFT_S:
+        case HCTL_T:
+        case HCTL_N:
+        case HSFT_E:
+        case HALT_I:
+        case HGUI_O:
             return TAPPING_TERM + 0;
 
         default:
@@ -56,14 +56,14 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case GUI_A:
-        case ALT_R:
-        case SFT_S:
-        case CTL_T:
-        case CTL_N:
-        case SFT_E:
-        case ALT_I:
-        case GUI_O:
+        case HGUI_A:
+        case HALT_R:
+        case HSFT_S:
+        case HCTL_T:
+        case HCTL_N:
+        case HSFT_E:
+        case HALT_I:
+        case HGUI_O:
             return true;
 
         default:

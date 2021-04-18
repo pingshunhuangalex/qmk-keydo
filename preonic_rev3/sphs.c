@@ -47,7 +47,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
         case HSFT_E:
         case HALT_I:
         case HGUI_O:
-            return TAPPING_TERM + 0;
+            return TAPPING_TERM + 50;
 
         default:
             return TAPPING_TERM;

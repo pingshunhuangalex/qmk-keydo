@@ -27,49 +27,49 @@ enum custom_keycodes {
 #define SET_FN TO(_FN)
 
 // Home Row Mods
-#define HGUI_A LGUI_T(KC_A)
-#define HALT_R LALT_T(KC_R)
-#define HSFT_S LSFT_T(KC_S)
-#define HCTL_T LCTL_T(KC_T)
+// #define HGUI_A LGUI_T(KC_A)
+// #define HALT_R LALT_T(KC_R)
+// #define HSFT_S LSFT_T(KC_S)
+// #define HCTL_T LCTL_T(KC_T)
 
-#define HCTL_N RCTL_T(KC_N)
-#define HSFT_E RSFT_T(KC_E)
-#define HALT_I RALT_T(KC_I)
-#define HGUI_O RGUI_T(KC_O)
+// #define HCTL_N RCTL_T(KC_N)
+// #define HSFT_E RSFT_T(KC_E)
+// #define HALT_I RALT_T(KC_I)
+// #define HGUI_O RGUI_T(KC_O)
 
-uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case HGUI_A:
-        case HALT_R:
-        case HSFT_S:
-        case HCTL_T:
-        case HCTL_N:
-        case HSFT_E:
-        case HALT_I:
-        case HGUI_O:
-            return TAPPING_TERM + 50;
+// uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) {
+//     switch (keycode) {
+//         case HGUI_A:
+//         case HALT_R:
+//         case HSFT_S:
+//         case HCTL_T:
+//         case HCTL_N:
+//         case HSFT_E:
+//         case HALT_I:
+//         case HGUI_O:
+//             return TAPPING_TERM + 50;
 
-        default:
-            return TAPPING_TERM;
-    }
-}
+//         default:
+//             return TAPPING_TERM;
+//     }
+// }
 
-bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case HGUI_A:
-        case HALT_R:
-        case HSFT_S:
-        case HCTL_T:
-        case HCTL_N:
-        case HSFT_E:
-        case HALT_I:
-        case HGUI_O:
-            return true;
+// bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+//     switch (keycode) {
+//         case HGUI_A:
+//         case HALT_R:
+//         case HSFT_S:
+//         case HCTL_T:
+//         case HCTL_N:
+//         case HSFT_E:
+//         case HALT_I:
+//         case HGUI_O:
+//             return true;
 
-        default:
-            return false;
-    }
-}
+//         default:
+//             return false;
+//     }
+// }
 
 // Macros
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {

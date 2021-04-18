@@ -11,7 +11,7 @@ enum custom_keycodes {
     DEL_END
 };
 
-// Layer switchers
+// Layer Switchers
 #define SET_BAS TO(_BASE)
 
 #define OSL_NUM OSL(_NUM)
@@ -26,7 +26,7 @@ enum custom_keycodes {
 #define OSL_FN OSL(_FN)
 #define SET_FN TO(_FN)
 
-// Home row mods
+// Home Row Mods
 #define GUI_A LGUI_T(KC_A)
 #define ALT_R LALT_T(KC_R)
 #define SFT_S LSFT_T(KC_S)

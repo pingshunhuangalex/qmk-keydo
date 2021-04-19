@@ -60,7 +60,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     */
     [_SYM] = LAYOUT_preonic_grid(
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______,
-        _______, XXXXXXX, KC_PERC, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, KC_PLUS, KC_GRV, KC_DLR,  XXXXXXX, SET_BAS,
+        _______, XXXXXXX, KC_PERC, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, KC_PLUS, KC_GRV,  KC_DLR,  XXXXXXX, SET_BAS,
         _______, KC_LT,   KC_GT,   KC_LPRN, KC_RPRN, KC_PIPE, KC_AMPR, KC_MINS, KC_EQL,  KC_UNDS, KC_ASTR, KC_DQUO,
         _______, KC_CIRC, KC_AT,   KC_LCBR, KC_RCBR, KC_BSLS, KC_EXLM, KC_QUES, KC_COLN, KC_HASH, KC_TILD, SET_BAS,
         _______, _______, _______, SET_BAS, _______, _______, _______, SET_BAS, SET_SYM, _______, _______, _______

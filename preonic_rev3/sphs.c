@@ -12,6 +12,7 @@ enum custom_keycodes {
 };
 
 // Layer Switchers
+#define OSM_SFT OSM(MOD_LSFT)
 #define SET_BAS TO(_BASE)
 
 #define OSL_NUM OSL(_NUM)

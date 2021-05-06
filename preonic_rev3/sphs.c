@@ -31,6 +31,16 @@ enum custom_keycodes {
 #define OSL_MK OSL(_MK)
 #define SET_MK TO(_MK)
 
+bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case BS_LSFT:
+            return true;
+
+        default:
+            return false;
+    }
+}
+
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case BS_LSFT:

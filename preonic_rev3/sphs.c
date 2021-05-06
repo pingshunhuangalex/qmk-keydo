@@ -3,7 +3,8 @@ enum preonic_layers {
     _NUM,
     _SYM,
     _NAV,
-    _FN
+    _FN,
+    _MK
 };
 
 enum custom_keycodes {
@@ -26,6 +27,9 @@ enum custom_keycodes {
 
 #define OSL_FN OSL(_FN)
 #define SET_FN TO(_FN)
+
+#define OSL_MK OSL(_MK)
+#define SET_MK TO(_MK)
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {

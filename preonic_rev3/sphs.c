@@ -39,7 +39,7 @@ bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
         default:
             return false;
     }
-}
+};
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
@@ -49,7 +49,7 @@ bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
         default:
             return false;
     }
-}
+};
 
 // Macros
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {

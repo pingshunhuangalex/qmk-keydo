@@ -13,7 +13,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  GUI  |   Z   |   X   |   C   |   D   |   V   |   K   |   H   |   ,   |   .   |   /   |  Fn   |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * |  Esc  | Left  | Right |  Alt  |BS_LSFT| Lower | Raise |SpaceFn|  Mk   | Down  |  Up   | Enter |
+    * |  Esc  | Left  | Right | Shift |BS_LALT| Lower | Raise |SpaceFn|  Mk   | Down  |  Up   | Enter |
     * `-----------------------------------------------------------------------------------------------'
     */
     [_BASE] = LAYOUT_preonic_grid(
@@ -21,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, KC_BSPC,
         KC_LCTL, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,    KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT,
         KC_LGUI, KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, OSL_FN,
-        KC_ESC,  KC_LEFT, KC_RGHT, KC_LALT, BS_LSFT, OSL_NUM, OSL_SYM, SPC_NAV, OSL_MK,  KC_DOWN, KC_UP,   KC_ENT
+        KC_ESC,  KC_LEFT, KC_RGHT, OSM_SFT, BS_LALT, OSL_NUM, OSL_SYM, SPC_NAV, OSL_MK,  KC_DOWN, KC_UP,   KC_ENT
     ),
 
     /* Layer 1: NUMBER (Lower)
@@ -34,7 +34,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  GUI  |   /   |   *   |   -   |   +   |   (   |   )   |   .   |   ,   |   %   |   ^   | _BASE |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * |  Esc  | Left  | Right |  Alt  |BS_LSFT| _NUM  | _BASE | _BASE | _NAV  | Down  |  Up   | Enter |
+    * |  Esc  | Left  | Right | Shift |BS_LALT| _NUM  | _BASE | _BASE | _NAV  | Down  |  Up   | Enter |
     * `-----------------------------------------------------------------------------------------------'
     */
     [_NUM] = LAYOUT_preonic_grid(
@@ -55,7 +55,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  GUI  |   ^   |   @   |   {   |   }   |   \   |   !   |   ?   |   :   |   #   |   ~   | _BASE |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * |  Esc  | Left  | Right |  Alt  |BS_LSFT| _BASE | _SYM  | _BASE | _BASE | Down  |  Up   | Enter |
+    * |  Esc  | Left  | Right | Shift |BS_LALT| _BASE | _SYM  | _BASE | _BASE | Down  |  Up   | Enter |
     * `-----------------------------------------------------------------------------------------------'
     */
     [_SYM] = LAYOUT_preonic_grid(
@@ -76,7 +76,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  GUI  |       |       |       |DEL_HOM|DEL_END|   ,   |   1   |   2   |   3   | Enter | _BASE |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * |  Esc  | Left  | Right |  Alt  |BS_LSFT| _BASE | _BASE |   0   | Space |   .   | Enter | Enter |
+    * |  Esc  | Left  | Right | Shift |BS_LALT| _BASE | _BASE |   0   | Space |   .   | Enter | Enter |
     * `-----------------------------------------------------------------------------------------------'
     */
     [_NAV] = LAYOUT_preonic_grid(
@@ -97,7 +97,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  GUI  | Brt-  | Brt+  |  F11  |  F12  |       |       | Stop  | Play  |Rewind |Forward|  _FN  |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * |  Esc  | Prev  | Next  |  Alt  |BS_LSFT| _BASE | _BASE | _BASE | _BASE | Vol-  | Vol+  | Mute  |
+    * |  Esc  | Prev  | Next  | Shift |BS_LALT| _BASE | _BASE | _BASE | _BASE | Vol-  | Vol+  | Mute  |
     * `-----------------------------------------------------------------------------------------------'
     */
     [_FN] = LAYOUT_preonic_grid(
@@ -118,7 +118,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  GUI  |       |       |       |       |       |       |       |MWDown |       |       | _BASE |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * |  Esc  | Left  | Right |  Alt  |BS_LSFT| _BASE | _BASE | _BASE |  _MK  | Down  |  Up   | Enter |
+    * |  Esc  | Left  | Right | Shift |BS_LALT| _BASE | _BASE | _BASE |  _MK  | Down  |  Up   | Enter |
     * `-----------------------------------------------------------------------------------------------'
     */
     [_MK] = LAYOUT_preonic_grid(

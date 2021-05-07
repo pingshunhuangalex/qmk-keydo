@@ -12,8 +12,11 @@ enum custom_keycodes {
     DEL_END
 };
 
+// Modifier Mods
+#define OSM_SFT OSM(MOD_LSFT)
+#define BS_LALT ALT_T(KC_BSPC)
+
 // Layer Switchers
-#define BS_LSFT LSFT_T(KC_BSPC)
 #define SET_BAS TO(_BASE)
 
 #define OSL_NUM OSL(_NUM)
@@ -33,17 +36,7 @@ enum custom_keycodes {
 
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case BS_LSFT:
-            return true;
-
-        default:
-            return false;
-    }
-};
-
-bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case BS_LSFT:
+        case BS_LALT:
             return true;
 
         default:

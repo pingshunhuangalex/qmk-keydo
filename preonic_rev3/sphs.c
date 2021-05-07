@@ -2,9 +2,9 @@ enum preonic_layers {
     _BASE = 0,
     _NUM,
     _SYM,
+    _MK,
     _NAV,
-    _FN,
-    _MK
+    _FN
 };
 
 enum custom_keycodes {
@@ -25,14 +25,14 @@ enum custom_keycodes {
 #define OSL_SYM OSL(_SYM)
 #define SET_SYM TO(_SYM)
 
+#define OSL_MK OSL(_MK)
+#define SET_MK TO(_MK)
+
 #define SPC_NAV LT(_NAV, KC_SPC)
 #define SET_NAV TO(_NAV)
 
 #define OSL_FN OSL(_FN)
 #define SET_FN TO(_FN)
-
-#define OSL_MK OSL(_MK)
-#define SET_MK TO(_MK)
 
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {

@@ -116,7 +116,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * | Ctrl  |  F6   |  F3   |  F1   |  F2   |  F7   |  F9   |  F4   |  F10  |  F5   |  F8   |  GUI  |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * |  Del  | Brt-  | Brt+  |  F11  |  F12  |       |       | Print | Menu  | Pause | Calc  |  Tab  |
+    * |  Del  | Brt-  | Brt+  |  F11  |  F12  |       |       | Calc  | Print | Menu  | Pause |  Tab  |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Esc  | Left  | Right |  _FN  | Bksp  |  Alt  | Shift | _BASE |  _FN  | Down  |  Up   | Enter |
     * `-----------------------------------------------------------------------------------------------'
@@ -125,7 +125,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         _______, RESET,   DEBUG,   EEP_RST, XXXXXXX, KC_NLCK, KC_SLCK, KC_CAPS, XXXXXXX, KC_WAKE, KC_SLEP, KC_ENT,
         _______, KC_F6,   KC_F3,   KC_F1,   KC_F2,   KC_F7,   KC_F9,   KC_F4,   KC_F10,  KC_F5,   KC_F8,   KC_LGUI,
-        _______, KC_BRID, KC_BRIU, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, KC_PSCR, KC_APP,  KC_PAUS, KC_CALC, _______,
+        _______, KC_BRID, KC_BRIU, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, KC_CALC, KC_PSCR, KC_APP,  KC_PAUS, _______,
         _______, _______, _______, SET_FN,  KC_BSPC, _______, _______, SET_BAS, SET_FN,  _______, _______, _______
     )
 };

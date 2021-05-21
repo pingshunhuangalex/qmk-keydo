@@ -19,11 +19,6 @@
 #define FORCE_NKRO                        // NKRO by default requires to be turned on, this forces it on during keyboard startup regardless of EEPROM setting. NKRO can still be turned off but will be turned on again if the keyboard reboots
 #define TAP_CODE_DELAY 10                 // Sets the delay between register_code and unregister_code, if you're having issues with it registering properly (common on VUSB boards). The value is in milliseconds
 
-#define IGNORE_MOD_TAP_INTERRUPT          // Makes it possible to do rolling combos (zx) with keys that convert to other keys on hold, by enforcing the TAPPING_TERM for both keys
-#define IGNORE_MOD_TAP_INTERRUPT_PER_KEY  // Enables handling for per key IGNORE_MOD_TAP_INTERRUPT settings
-#define TAPPING_FORCE_HOLD                // Makes it possible to use a dual role key as modifier shortly after having been tapped
-#define TAPPING_FORCE_HOLD_PER_KEY        // Enables handling for per key TAPPING_FORCE_HOLD settings
-
 #define MOUSEKEY_DELAY 0                  // Delay between pressing a movement key and cursor movement
 #define MOUSEKEY_INTERVAL 16              // Time between cursor movements in milliseconds
 #define MOUSEKEY_MAX_SPEED 7              // Maximum number of scroll steps per scroll action

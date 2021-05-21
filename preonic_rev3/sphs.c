@@ -40,8 +40,6 @@ enum custom_keycodes {
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case SQT_GUI:
-        case DQT_GUI:
-        case EQL_GUI:
             return true;
 
         default:
@@ -52,8 +50,6 @@ bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case SQT_GUI:
-        case DQT_GUI:
-        case EQL_GUI:
             return true;
 
         default:

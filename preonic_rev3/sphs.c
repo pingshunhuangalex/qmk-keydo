@@ -14,7 +14,9 @@ enum custom_keycodes {
 
 // Modifier Mods
 #define OSM_SFT OSM(MOD_LSFT)
-#define BS_LALT ALT_T(KC_BSPC)
+#define GUI_SQT GUI_T(KC_QUOT)
+#define GUI_DQT GUI_T(KC_DQUO)
+#define GUI_EQL GUI_T(KC_EQL)
 
 // Layer Switchers
 #define SET_BAS TO(_BASE)
@@ -25,18 +27,32 @@ enum custom_keycodes {
 #define OSL_SYM OSL(_SYM)
 #define SET_SYM TO(_SYM)
 
-#define OSL_MK OSL(_MK)
+#define BSPC_MK LT(_MK, KC_BSPC)
 #define SET_MK TO(_MK)
 
 #define SPC_NAV LT(_NAV, KC_SPC)
 #define SET_NAV TO(_NAV)
 
-#define OSL_FN OSL(_FN)
+#define ENT_FN LT(_FN, KC_ENT)
 #define SET_FN TO(_FN)
 
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case BS_LALT:
+        case GUI_SQT:
+        case GUI_DQT:
+        case GUI_EQL:
+            return true;
+
+        default:
+            return false;
+    }
+};
+
+bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+    switch (keycode) {
+        case GUI_SQT:
+        case GUI_DQT:
+        case GUI_EQL:
             return true;
 
         default:

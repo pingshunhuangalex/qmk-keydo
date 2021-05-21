@@ -21,6 +21,8 @@
 
 #define IGNORE_MOD_TAP_INTERRUPT          // Makes it possible to do rolling combos (zx) with keys that convert to other keys on hold, by enforcing the TAPPING_TERM for both keys
 #define IGNORE_MOD_TAP_INTERRUPT_PER_KEY  // Enables handling for per key IGNORE_MOD_TAP_INTERRUPT settings
+#define TAPPING_FORCE_HOLD                // Makes it possible to use a dual role key as modifier shortly after having been tapped
+#define TAPPING_FORCE_HOLD_PER_KEY        // Enables handling for per key TAPPING_FORCE_HOLD settings
 
 #define MOUSEKEY_DELAY 0                  // Delay between pressing a movement key and cursor movement
 #define MOUSEKEY_INTERVAL 16              // Time between cursor movements in milliseconds

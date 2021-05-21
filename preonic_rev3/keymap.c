@@ -9,7 +9,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Esc  |   Q   |   W   |   F   |   P   |   B   |   J   |   L   |   U   |   Y   |   ;   |EnterFn|
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * | Ctrl  |   A   |   R   |   S   |   T   |   G   |   M   |   N   |   E   |   I   |   O   | GUI_' |
+    * | Ctrl  |   A   |   R   |   S   |   T   |   G   |   M   |   N   |   E   |   I   |   O   | '_GUI |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Del  |   Z   |   X   |   C   |   D   |   V   |   K   |   H   |   ,   |   .   |   /   |  Tab  |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
@@ -19,7 +19,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_BASE] = LAYOUT_preonic_grid(
         KC_GRV,  KC_6,    KC_3,    KC_1,    KC_2,    KC_7,    KC_9,    KC_4,    KC_0,    KC_5,    KC_8,    KC_QUOT,
         KC_ESC,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, ENT_FN,
-        KC_LCTL, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,    KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    GUI_SQT,
+        KC_LCTL, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,    KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    SQT_GUI,
         KC_DEL,  KC_Z,    KC_X,    KC_C,    KC_D,    KC_V,    KC_K,    KC_H,    KC_COMM, KC_DOT,  KC_SLSH, KC_TAB,
         KC_ESC,  KC_LEFT, KC_RGHT, OSL_NUM, BSPC_MK, KC_LALT, OSM_SFT, SPC_NAV, OSL_SYM, KC_DOWN, KC_UP,   KC_ENT
     ),
@@ -30,7 +30,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Esc  |       |       |       |       |       |       |       |       |       |       | Enter |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * | Ctrl  |   6   |   3   |   1   |   2   |   7   |   9   |   4   |   0   |   5   |   8   | GUI_= |
+    * | Ctrl  |   6   |   3   |   1   |   2   |   7   |   9   |   4   |   0   |   5   |   8   | =_GUI |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Del  |   /   |   *   |   -   |   +   |   (   |   )   |   .   |   ,   |   %   |   ^   |  Tab  |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
@@ -40,7 +40,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_NUM] = LAYOUT_preonic_grid(
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_ENT,
-        _______, KC_6,    KC_3,    KC_1,    KC_2,    KC_7,    KC_9,    KC_4,    KC_0,    KC_5,    KC_8,    GUI_EQL,
+        _______, KC_6,    KC_3,    KC_1,    KC_2,    KC_7,    KC_9,    KC_4,    KC_0,    KC_5,    KC_8,    EQL_GUI,
         _______, KC_SLSH, KC_ASTR, KC_MINS, KC_PLUS, KC_LPRN, KC_RPRN, KC_DOT,  KC_COMM, KC_PERC, KC_CIRC, _______,
         _______, _______, _______, SET_NUM, KC_BSPC, _______, _______, SET_BAS, SET_NUM, _______, _______, _______
     ),
@@ -51,7 +51,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Esc  |       |   %   |   [   |   ]   |       |       |   +   |   `   |   $   |       | Enter |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * | Ctrl  |   <   |   >   |   (   |   )   |   |   |   &   |   -   |   =   |   _   |   *   | GUI_" |
+    * | Ctrl  |   <   |   >   |   (   |   )   |   |   |   &   |   -   |   =   |   _   |   *   | "_GUI |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Del  |   ^   |   @   |   {   |   }   |   \   |   !   |   ?   |   :   |   #   |   ~   |  Tab  |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_SYM] = LAYOUT_preonic_grid(
         XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
         _______, XXXXXXX, KC_PERC, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, KC_PLUS, KC_GRV,  KC_DLR,  XXXXXXX, KC_ENT,
-        _______, KC_LT,   KC_GT,   KC_LPRN, KC_RPRN, KC_PIPE, KC_AMPR, KC_MINS, KC_EQL,  KC_UNDS, KC_ASTR, GUI_DQT,
+        _______, KC_LT,   KC_GT,   KC_LPRN, KC_RPRN, KC_PIPE, KC_AMPR, KC_MINS, KC_EQL,  KC_UNDS, KC_ASTR, DQT_GUI,
         _______, KC_CIRC, KC_AT,   KC_LCBR, KC_RCBR, KC_BSLS, KC_EXLM, KC_QUES, KC_COLN, KC_HASH, KC_TILD, _______,
         _______, _______, _______, SET_SYM, KC_BSPC, _______, _______, SET_BAS, SET_SYM, _______, _______, _______
     ),

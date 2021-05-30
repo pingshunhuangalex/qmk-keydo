@@ -30,7 +30,7 @@ enum custom_keycodes {
 #define SPC_NAV LT(_NAV, KC_SPC)
 #define SET_NAV TO(_NAV)
 
-#define ESC_FN LT(_FN, KC_ESC)
+#define ENT_FN LT(_FN, KC_ENT)
 #define SET_FN TO(_FN)
 
 // Macros

@@ -1,7 +1,7 @@
 #include QMK_KEYBOARD_H
 #include "muse.h"
-#include "sphs_win.c"
-#include "sphs.c"
+#include "keycodes_win.c"
+#include "profile.c"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* [Win] Layer 0: BASE (Colemak-DH)
@@ -73,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Tab  |       |       | MsUp  |       |       |       |MWLeft | MWUp  |MWRight|       |  GUI  |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * | Ctrl  |       |MsLeft |MsDown |MsRight|       |       |MsBtn1 |MsBtn3 |MsBtn2 |       | _FNW  |
+    * | Ctrl  |       |MsLeft |MsDown |MsRight|       |       |MsBtn1 |MsBtn3 |MsBtn2 |       |SET_FNW|
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Esc  |       |       |       |       |       |       |MsBtn4 |MWDown |MsBtn5 |       | Enter |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
@@ -94,7 +94,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Tab  |  Ins  | PgUp  |  Up   | PgDn  |  Del  |       | Prev  | Vol+  | Next  |       |  GUI  |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * | Ctrl  | Home  | Left  | Down  | Right |  End  |       | Play  | Mute  | Stop  |       | _FNW  |
+    * | Ctrl  | Home  | Left  | Down  | Right |  End  |       | Play  | Mute  | Stop  |       |SET_FNW|
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Esc  |       |       |       |DEL_LSW|DEL_LEW|       |Rewind | Vol-  |Forward|       | Enter |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|

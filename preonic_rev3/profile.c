@@ -14,6 +14,8 @@ bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case BSL_GUI:
+        case SPC_NVW:
+        case ENT_FNW:
             return true;
 
         default:
@@ -26,9 +28,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case DEL_LSW:
             if (record->event.pressed) {
                 tap_code16(S(KC_HOME));
-                register_code(KC_BSPC);
-            } else {
-                unregister_code(KC_BSPC);
+                tap_code(KC_BSPC);
             }
 
             return false;
@@ -36,9 +36,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case DEL_LEW:
             if (record->event.pressed) {
                 tap_code16(S(KC_END));
-                register_code(KC_DEL);
-            } else {
-                unregister_code(KC_DEL);
+                tap_code(KC_BSPC);
+            }
+
+            return false;
+
+        case DEL_WFW:
+            if (record->event.pressed) {
+                tap_code16(C(KC_BSPC));
             }
 
             return false;

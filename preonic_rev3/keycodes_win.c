@@ -9,7 +9,8 @@ enum preonic_layers_win {
 
 enum preonic_keycodes_win {
     DEL_LSW = SAFE_RANGE,
-    DEL_LEW
+    DEL_LEW,
+    DEL_WFW
 };
 
 #define SET_BSW TO(_BSW)

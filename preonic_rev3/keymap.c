@@ -98,7 +98,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
     * |  Esc  |       |       |       |DEL_LSW|DEL_LEW|       |Rewind | Vol-  |Forward|       | Enter |
     * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
-    * |  Esc  | Left  | Right |SET_BSW| Bksp  |  Alt  | Shift |SET_BSW|SET_BSW| Down  |  Up   | Enter |
+    * |  Esc  | Left  | Right |SET_BSW|DEL_WFW|  Alt  | Shift |SET_BSW|SET_BSW| Down  |  Up   | Enter |
     * `-----------------------------------------------------------------------------------------------'
     */
     [_NVW] = LAYOUT_preonic_grid(
@@ -106,7 +106,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, KC_INS,  KC_PGUP, KC_UP,   KC_PGDN, KC_DEL,  XXXXXXX, KC_MPRV, KC_VOLU, KC_MNXT, XXXXXXX, KC_LGUI,
         _______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  XXXXXXX, KC_MPLY, KC_MUTE, KC_MSTP, XXXXXXX, SET_FNW,
         _______, XXXXXXX, XXXXXXX, XXXXXXX, DEL_LSW, DEL_LEW, XXXXXXX, KC_MRWD, KC_VOLD, KC_MFFD, XXXXXXX, KC_ENT,
-        _______, _______, _______, SET_BSW, KC_BSPC, _______, _______, SET_BSW, SET_BSW, _______, _______, _______
+        _______, _______, _______, SET_BSW, DEL_WFW, _______, _______, SET_BSW, SET_BSW, _______, _______, _______
     ),
 
     /* [Win] Layer 5: FUNCTION (Enter)

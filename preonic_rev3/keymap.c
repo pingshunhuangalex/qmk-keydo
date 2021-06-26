@@ -1,4 +1,4 @@
-#include "keymaps_win.c"
+#include "win/keymaps.c"
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* -------------------------------------------------------------------------------------------- */

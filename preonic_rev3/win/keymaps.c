@@ -1,6 +1,6 @@
 #include QMK_KEYBOARD_H
-#include "keycodes_win.c"
-#include "profile.c"
+#include "keycodes.c"
+#include "../profile.c"
 
 #define LAYOUT_preonic_grid_win(...) LAYOUT_preonic_grid(__VA_ARGS__)
 

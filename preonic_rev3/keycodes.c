@@ -1,0 +1,2 @@
+#define OSM_SFT OSM(MOD_LSFT)
+#define BSL_GUI GUI_T(KC_BSLS)

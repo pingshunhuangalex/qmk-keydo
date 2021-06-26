@@ -1,5 +1,17 @@
-#define OSM_SFT OSM(MOD_LSFT)
-#define BSL_GUI GUI_T(KC_BSLS)
+enum preonic_layers {
+    _BSW = 0,
+    _NMW,
+    _SMW,
+    _MKW,
+    _NVW,
+    _FNW
+};
+
+enum preonic_custom_keycodes {
+    DEL_LSW = SAFE_RANGE,
+    DEL_LEW,
+    DEL_WFW
+};
 
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {

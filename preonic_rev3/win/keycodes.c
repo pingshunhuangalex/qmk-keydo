@@ -1,18 +1,3 @@
-enum preonic_layers_win {
-    _BSW = 0,
-    _NMW,
-    _SMW,
-    _MKW,
-    _NVW,
-    _FNW
-};
-
-enum preonic_keycodes_win {
-    DEL_LSW = SAFE_RANGE,
-    DEL_LEW,
-    DEL_WFW
-};
-
 #define SET_BSW TO(_BSW)
 
 #define OSL_NMW OSL(_NMW)

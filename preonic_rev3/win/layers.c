@@ -1,5 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "keycodes.c"
+#include "../keycodes.c"
 #include "../profile.c"
 
 #define LAYOUT_preonic_grid_win(...) LAYOUT_preonic_grid(__VA_ARGS__)
@@ -17,7 +18,7 @@
  * |  Esc  | Left  | Right | Lower |BSP_MKW|  Alt  | Shift |SPC_NVW| Raise | Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
-#define KM_BSW \
+#define LAYER_BSW \
 KC_GRV,  KC_6,    KC_3,    KC_1,    KC_2,    KC_7,    KC_9,    KC_4,    KC_0,    KC_5,    KC_8,    KC_DEL, \
 KC_TAB,  KC_Q,    KC_W,    KC_F,    KC_P,    KC_B,    KC_J,    KC_L,    KC_U,    KC_Y,    KC_SCLN, BSL_GUI, \
 KC_LCTL, KC_A,    KC_R,    KC_S,    KC_T,    KC_G,    KC_M,    KC_N,    KC_E,    KC_I,    KC_O,    KC_QUOT, \
@@ -37,7 +38,7 @@ KC_ESC,  KC_LEFT, KC_RGHT, OSL_NMW, BSP_MKW, KC_LALT, OSM_SFT, SPC_NVW, OSL_SMW,
  * |  Esc  | Left  | Right |SET_NMW| Bksp  |  Alt  | Shift |SET_BSW|SET_NVW| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
-#define KM_NMW \
+#define LAYER_NMW \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
 _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_LGUI, \
 _______, KC_6,    KC_3,    KC_1,    KC_2,    KC_7,    KC_9,    KC_4,    KC_0,    KC_5,    KC_8,    KC_EQL, \
@@ -57,7 +58,7 @@ _______, _______, _______, SET_NMW, KC_BSPC, _______, _______, SET_BSW, SET_NVW,
  * |  Esc  | Left  | Right |SET_MKW| Bksp  |  Alt  | Shift |SET_BSW|SET_SMW| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
-#define KM_SMW \
+#define LAYER_SMW \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
 _______, XXXXXXX, KC_PERC, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, XXXXXXX, KC_GRV,  KC_DLR,  XXXXXXX, KC_LGUI, \
 _______, KC_LT,   KC_GT,   KC_LPRN, KC_RPRN, KC_PIPE, KC_TILD, KC_MINS, KC_PLUS, KC_EQL,  KC_UNDS, KC_DQUO, \
@@ -77,7 +78,7 @@ _______, _______, _______, SET_MKW, KC_BSPC, _______, _______, SET_BSW, SET_SMW,
  * |  Esc  | Left  | Right |SET_BSW| Bksp  |  Alt  | Shift |SET_BSW|SET_BSW| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
-#define KM_MKW \
+#define LAYER_MKW \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
 _______, XXXXXXX, XXXXXXX, KC_MS_U, XXXXXXX, XXXXXXX, XXXXXXX, KC_WH_L, KC_WH_U, KC_WH_R, XXXXXXX, KC_LGUI, \
 _______, XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, XXXXXXX, XXXXXXX, KC_BTN1, KC_BTN3, KC_BTN2, XXXXXXX, SET_FNW, \
@@ -97,7 +98,7 @@ _______, _______, _______, SET_BSW, KC_BSPC, _______, _______, SET_BSW, SET_BSW,
  * |  Esc  | Left  | Right |SET_BSW|DEL_WFW|  Alt  | Shift |SET_BSW|SET_BSW| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
-#define KM_NVW \
+#define LAYER_NVW \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
 _______, KC_INS,  KC_PGUP, KC_UP,   KC_PGDN, KC_DEL,  XXXXXXX, KC_MPRV, KC_VOLU, KC_MNXT, XXXXXXX, KC_LGUI, \
 _______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  XXXXXXX, KC_MPLY, KC_MUTE, KC_MSTP, XXXXXXX, SET_FNW, \
@@ -117,7 +118,7 @@ _______, _______, _______, SET_BSW, DEL_WFW, _______, _______, SET_BSW, SET_BSW,
  * |  Esc  | Left  | Right |SET_BSW| Bksp  |  Alt  | Shift |SET_BSW|SET_BSW| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
-#define KM_FNW \
+#define LAYER_FNW \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
 _______, RESET,   DEBUG,   EEP_RST, XXXXXXX, KC_NLCK, KC_SLCK, KC_CAPS, XXXXXXX, KC_WAKE, KC_SLEP, KC_LGUI, \
 _______, KC_F6,   KC_F3,   KC_F1,   KC_F2,   KC_F7,   KC_F9,   KC_F4,   KC_F10,  KC_F5,   KC_F8,   SET_BSW, \

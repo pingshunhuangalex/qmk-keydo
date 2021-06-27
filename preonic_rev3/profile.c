@@ -13,9 +13,11 @@ enum preonic_custom_keycodes {
     DEL_WFW
 };
 
+#define OSM_SFT OSM(MOD_LSFT)
+
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case BSL_GUI:
+        case BSL_WIN:
             return true;
 
         default:
@@ -25,7 +27,7 @@ bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
 
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case BSL_GUI:
+        case BSL_WIN:
         case SPC_NVW:
         case ENT_FNW:
             return true;

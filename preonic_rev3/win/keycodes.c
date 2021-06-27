@@ -1,3 +1,5 @@
+#define BSL_WIN WIN_T(KC_BSLS)
+
 #define SET_BSW TO(_BSW)
 
 #define OSL_NMW OSL(_NMW)

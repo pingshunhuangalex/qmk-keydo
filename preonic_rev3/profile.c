@@ -1,30 +1,30 @@
 enum preonic_layers {
     _BSW = 0,
-    _BSM,
     _NMW,
-    _NMM,
     _SMW,
-    _SMM,
     _MKW,
-    _MKM,
     _NVW,
-    _NVM,
     _FNW,
+    _BSM,
+    _NMM,
+    _SMM,
+    _MKM,
+    _NVM,
     _FNM
 };
 
 enum preonic_custom_keycodes {
     LYT_WIN = SAFE_RANGE,
-    LYT_MAC,
     MOV_PWW,
-    MOV_PWM,
     MOV_NWW,
-    MOV_NWM,
     DEL_PWW,
-    DEL_PWM,
     DEL_LSW,
-    DEL_LSM,
     DEL_LEW,
+    LYT_MAC,
+    MOV_PWM,
+    MOV_NWM,
+    DEL_PWM,
+    DEL_LSM,
     DEL_LEM
 };
 
@@ -44,10 +44,10 @@ bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case BSL_WIN:
-        case BSL_OPT:
         case SPC_NVW:
-        case SPC_NVM:
         case ENT_FNW:
+        case BSL_OPT:
+        case SPC_NVM:
         case ENT_FNM:
             return true;
 
@@ -56,18 +56,15 @@ bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     }
 };
 
+float win_song[][2] = SONG(VIOLIN_SOUND);
+float mac_song[][2] = SONG(GUITAR_SOUND);
+
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LYT_WIN:
             if (record->event.pressed) {
                 set_single_persistent_default_layer(_BSW);
-            }
-
-            return false;
-
-        case LYT_MAC:
-            if (record->event.pressed) {
-                set_single_persistent_default_layer(_BSM);
+                PLAY_SONG(win_song);
             }
 
             return false;
@@ -79,13 +76,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
             return false;
 
-        case MOV_PWM:
-            if (record->event.pressed) {
-                tap_code16(LOPT(KC_LEFT));
-            }
-
-            return false;
-
         case MOV_NWW:
             if (record->event.pressed) {
                 tap_code16(C(KC_RGHT));
@@ -93,23 +83,9 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
             return false;
 
-        case MOV_NWM:
-            if (record->event.pressed) {
-                tap_code16(LOPT(KC_RGHT));
-            }
-
-            return false;
-
         case DEL_PWW:
             if (record->event.pressed) {
                 tap_code16(C(KC_BSPC));
-            }
-
-            return false;
-
-        case DEL_PWM:
-            if (record->event.pressed) {
-                tap_code16(LOPT(KC_BSPC));
             }
 
             return false;
@@ -122,17 +98,46 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
             return false;
 
-        case DEL_LSM:
-            if (record->event.pressed) {
-                tap_code16(LCMD(KC_BSPC));
-            }
-
-            return false;
-
         case DEL_LEW:
             if (record->event.pressed) {
                 tap_code16(S(KC_END));
                 tap_code(KC_BSPC);
+            }
+
+            return false;
+
+        case LYT_MAC:
+            if (record->event.pressed) {
+                set_single_persistent_default_layer(_BSM);
+                PLAY_SONG(mac_song);
+            }
+
+            return false;
+
+        case MOV_PWM:
+            if (record->event.pressed) {
+                tap_code16(LOPT(KC_LEFT));
+            }
+
+            return false;
+
+        case MOV_NWM:
+            if (record->event.pressed) {
+                tap_code16(LOPT(KC_RGHT));
+            }
+
+            return false;
+
+        case DEL_PWM:
+            if (record->event.pressed) {
+                tap_code16(LOPT(KC_BSPC));
+            }
+
+            return false;
+
+        case DEL_LSM:
+            if (record->event.pressed) {
+                tap_code16(LCMD(KC_BSPC));
             }
 
             return false;

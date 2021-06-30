@@ -15,12 +15,14 @@ enum preonic_layers {
 
 enum preonic_custom_keycodes {
     LYT_WIN = SAFE_RANGE,
+    IME_WIN,
     MOV_PWW,
     MOV_NWW,
     DEL_PWW,
     DEL_LSW,
     DEL_LEW,
     LYT_MAC,
+    IME_MAC,
     MOV_PWM,
     MOV_NWM,
     DEL_PWM,
@@ -69,6 +71,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
             return false;
 
+        case IME_WIN:
+            if (record->event.pressed) {
+                tap_code16(LWIN(KC_SPC));
+            }
+
+            return false;
+
         case MOV_PWW:
             if (record->event.pressed) {
                 tap_code16(C(KC_LEFT));
@@ -110,6 +119,13 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             if (record->event.pressed) {
                 set_single_persistent_default_layer(_BSM);
                 PLAY_SONG(mac_song);
+            }
+
+            return false;
+
+        case IME_MAC:
+            if (record->event.pressed) {
+                tap_code16(C(KC_SPC));
             }
 
             return false;

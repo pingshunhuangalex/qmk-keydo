@@ -91,7 +91,7 @@ _______, _______, _______, SET_BSM, KC_BSPC, _______, _______, SET_BSM, SET_BSM,
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Cmd  | Home  | Left  | Down  | Right |  End  |       | Play  | Mute  | Stop  |       |SET_FNM|
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Esc  |DEL_LSM|MOV_PWM|       |MOV_NWM|DEL_LEM|       |       | Vol-  |       |       | Enter |
+ * |  Esc  |DEL_LSM|MOV_PWM|IME_MAC|MOV_NWM|DEL_LEM|       |       | Vol-  |       |       | Enter |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Esc  | Left  | Right |SET_BSM|DEL_PWM| Ctrl  | Shift |SET_BSM|SET_BSM| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
@@ -100,7 +100,7 @@ _______, _______, _______, SET_BSM, KC_BSPC, _______, _______, SET_BSM, SET_BSM,
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
 _______, KC_INS,  KC_PGUP, KC_UP,   KC_PGDN, KC_DEL,  XXXXXXX, KC_MRWD, KC_VOLU, KC_MFFD, XXXXXXX, KC_LOPT, \
 _______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  XXXXXXX, KC_MPLY, KC_MUTE, KC_MSTP, XXXXXXX, SET_FNM, \
-_______, DEL_LSM, MOV_PWM, XXXXXXX, MOV_NWM, DEL_LEM, XXXXXXX, XXXXXXX, KC_VOLD, XXXXXXX, XXXXXXX, KC_ENT, \
+_______, DEL_LSM, MOV_PWM, IME_MAC, MOV_NWM, DEL_LEM, XXXXXXX, XXXXXXX, KC_VOLD, XXXXXXX, XXXXXXX, KC_ENT, \
 _______, _______, _______, SET_BSM, DEL_PWM, _______, _______, SET_BSM, SET_BSM, _______, _______, _______
 
 /* Layer 5: FUNCTION (Enter)

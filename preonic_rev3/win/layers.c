@@ -73,7 +73,7 @@ _______, _______, _______, SET_MKW, KC_BSPC, _______, _______, SET_BSW, SET_SMW,
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Esc  |       |       |       |       |       |       |MsBtn4 |MWDown |MsBtn5 |       | Enter |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Esc  | Left  | Right |SET_BSW| Bksp  |  Alt  | Shift |SET_BSW|SET_BSW| Down  |  Up   | Enter |
+ * |  Esc  | Left  | Right |SET_BSW| Bksp  |  Alt  | Shift | Space |SET_BSW| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
 #define LAYER_MKW \
@@ -81,7 +81,7 @@ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
 _______, XXXXXXX, XXXXXXX, KC_MS_U, XXXXXXX, XXXXXXX, XXXXXXX, KC_WH_L, KC_WH_U, KC_WH_R, XXXXXXX, KC_LWIN, \
 _______, XXXXXXX, KC_MS_L, KC_MS_D, KC_MS_R, XXXXXXX, XXXXXXX, KC_BTN1, KC_BTN3, KC_BTN2, XXXXXXX, SET_FNW, \
 _______, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_BTN4, KC_WH_D, KC_BTN5, XXXXXXX, KC_ENT, \
-_______, _______, _______, SET_BSW, KC_BSPC, _______, _______, SET_BSW, SET_BSW, _______, _______, _______
+_______, _______, _______, SET_BSW, KC_BSPC, _______, _______, KC_SPC,  SET_BSW, _______, _______, _______
 
 /* Layer 4: NAVIGATION + MEDIA (Space)
  * ,-----------------------------------------------------------------------------------------------.

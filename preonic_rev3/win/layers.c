@@ -33,7 +33,7 @@ KC_ESC,  KC_LEFT, KC_RGHT, OSL_NMW, BSP_MKW, KC_LALT, OSM_SFT, SPC_NVW, OSL_SMW,
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Esc  | KP /  | KP *  | KP -  | KP +  |   (   |   )   | KP .  | KP ,  |   %   |   ^   |KPEnter|
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Esc  | Left  | Right |SET_NMW| Bksp  |  Alt  | Shift |SET_BSW|SET_NVW| Down  |  Up   | Enter |
+ * |  Esc  | Left  | Right |SET_NMW| Bksp  |  Alt  | Shift |SET_BSW|SET_MKW| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
 #define LAYER_NMW \
@@ -41,7 +41,7 @@ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
 _______, KC_P6,   KC_P3,   KC_P1,   KC_P2,   KC_P7,   KC_P9,   KC_P4,   KC_P0,   KC_P5,   KC_P8,   KC_LWIN, \
 _______, KC_6,    KC_3,    KC_1,    KC_2,    KC_7,    KC_9,    KC_4,    KC_0,    KC_5,    KC_8,    KC_PEQL, \
 _______, KC_PSLS, KC_PAST, KC_PMNS, KC_PPLS, KC_LPRN, KC_RPRN, KC_PDOT, KC_PCMM, KC_PERC, KC_CIRC, KC_PENT, \
-_______, _______, _______, SET_NMW, KC_BSPC, _______, _______, SET_BSW, SET_NVW, _______, _______, _______
+_______, _______, _______, SET_NMW, KC_BSPC, _______, _______, SET_BSW, SET_MKW, _______, _______, _______
 
 /* Layer 2: SYMBOL (Raise)
  * ,-----------------------------------------------------------------------------------------------.
@@ -53,7 +53,7 @@ _______, _______, _______, SET_NMW, KC_BSPC, _______, _______, SET_BSW, SET_NVW,
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Esc  |   ^   |   @   |   {   |   }   |   &   |   !   |   ?   |   :   |   *   |   #   | Enter |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Esc  | Left  | Right |SET_MKW| Bksp  |  Alt  | Shift |SET_BSW|SET_SMW| Down  |  Up   | Enter |
+ * |  Esc  | Left  | Right |SET_NVW| Bksp  |  Alt  | Shift |SET_BSW|SET_SMW| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
 #define LAYER_SMW \
@@ -61,7 +61,7 @@ XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
 _______, XXXXXXX, KC_PERC, KC_LBRC, KC_RBRC, XXXXXXX, XXXXXXX, XXXXXXX, KC_GRV,  KC_DLR,  XXXXXXX, KC_LWIN, \
 _______, KC_LT,   KC_GT,   KC_LPRN, KC_RPRN, KC_PIPE, KC_TILD, KC_MINS, KC_PLUS, KC_EQL,  KC_UNDS, KC_DQUO, \
 _______, KC_CIRC, KC_AT,   KC_LCBR, KC_RCBR, KC_AMPR, KC_EXLM, KC_QUES, KC_COLN, KC_ASTR, KC_HASH, KC_ENT, \
-_______, _______, _______, SET_MKW, KC_BSPC, _______, _______, SET_BSW, SET_SMW, _______, _______, _______
+_______, _______, _______, SET_NVW, KC_BSPC, _______, _______, SET_BSW, SET_SMW, _______, _______, _______
 
 /* Layer 3: MOUSE KEYS (Backspace)
  * ,-----------------------------------------------------------------------------------------------.

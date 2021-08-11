@@ -25,6 +25,8 @@ enum preonic_custom_keycodes {
     IME_MAC,
     MOV_PWM,
     MOV_NWM,
+    MOV_LSM,
+    MOV_LEM,
     DEL_PWM,
     DEL_LSM,
     DEL_LEM
@@ -140,6 +142,20 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case MOV_NWM:
             if (record->event.pressed) {
                 tap_code16(LOPT(KC_RGHT));
+            }
+
+            return false;
+
+        case MOV_LSM:
+            if (record->event.pressed) {
+                tap_code16(LCMD(KC_LEFT));
+            }
+
+            return false;
+
+        case MOV_LEM:
+            if (record->event.pressed) {
+                tap_code16(LCMD(KC_RGHT));
             }
 
             return false;

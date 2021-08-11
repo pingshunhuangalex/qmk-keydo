@@ -89,9 +89,9 @@ _______, _______, _______, SET_BSM, KC_BSPC, _______, _______, KC_SPC,  SET_BSM,
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Tab  |  Ins  | PgUp  |  Up   | PgDn  |  Del  |       |Rewind | Vol+  |Forward|       |  Opt  |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Cmd  | Home  | Left  | Down  | Right |  End  |       | Play  | Mute  | Stop  |       |SET_FNM|
+ * |  Cmd  |MOV_LSM| Left  | Down  | Right |MOV_LEM|       | Play  | Mute  | Stop  |       |SET_FNM|
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Esc  |DEL_LSM|MOV_PWM|IME_MAC|MOV_NWM|DEL_LEM|       |       | Vol-  |       |       | Enter |
+ * |  Esc  |DEL_LSM|MOV_PWM|IME_MAC|MOV_NWM|DEL_LEM|       | Home  | Vol-  |  End  |       | Enter |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Esc  | Left  | Right |SET_BSM|DEL_PWM| Ctrl  | Shift |SET_BSM|SET_BSM| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
@@ -99,8 +99,8 @@ _______, _______, _______, SET_BSM, KC_BSPC, _______, _______, KC_SPC,  SET_BSM,
 #define LAYER_NVM \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
 _______, KC_INS,  KC_PGUP, KC_UP,   KC_PGDN, KC_DEL,  XXXXXXX, KC_MRWD, KC_VOLU, KC_MFFD, XXXXXXX, KC_LOPT, \
-_______, KC_HOME, KC_LEFT, KC_DOWN, KC_RGHT, KC_END,  XXXXXXX, KC_MPLY, KC_MUTE, KC_MSTP, XXXXXXX, SET_FNM, \
-_______, DEL_LSM, MOV_PWM, IME_MAC, MOV_NWM, DEL_LEM, XXXXXXX, XXXXXXX, KC_VOLD, XXXXXXX, XXXXXXX, KC_ENT, \
+_______, MOV_LSM, KC_LEFT, KC_DOWN, KC_RGHT, MOV_LEM, XXXXXXX, KC_MPLY, KC_MUTE, KC_MSTP, XXXXXXX, SET_FNM, \
+_______, DEL_LSM, MOV_PWM, IME_MAC, MOV_NWM, DEL_LEM, XXXXXXX, KC_HOME, KC_VOLD, KC_END,  XXXXXXX, KC_ENT, \
 _______, _______, _______, SET_BSM, DEL_PWM, _______, _______, SET_BSM, SET_BSM, _______, _______, _______
 
 /* Layer 5: FUNCTION (Enter)

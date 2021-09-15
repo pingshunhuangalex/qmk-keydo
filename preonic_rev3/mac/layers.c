@@ -31,7 +31,7 @@ KC_ESC,  KC_LEFT, KC_RGHT, OSL_NMM, BSP_MKM, KC_LCTL, OSM_SFT, SPC_NVM, OSL_SMM,
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Cmd  |   6   |   3   |   1   |   2   |   7   |   9   |   4   |   0   |   5   |   8   | KP =  |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Esc  | KP /  | KP *  | KP -  | KP +  |   (   |   )   | KP .  | KP ,  |   %   |   ^   |KPEnter|
+ * |  Esc  | KP /  | KP *  | KP -  | KP +  |   (   |   )   | KP .  |   ,   |   %   |   ^   |KPEnter|
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Esc  | Left  | Right |SET_NMM| Bksp  | Ctrl  | Shift |SET_BSM|SET_MKM| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
@@ -40,7 +40,7 @@ KC_ESC,  KC_LEFT, KC_RGHT, OSL_NMM, BSP_MKM, KC_LCTL, OSM_SFT, SPC_NVM, OSL_SMM,
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
 _______, KC_P6,   KC_P3,   KC_P1,   KC_P2,   KC_P7,   KC_P9,   KC_P4,   KC_P0,   KC_P5,   KC_P8,   KC_LOPT, \
 _______, KC_6,    KC_3,    KC_1,    KC_2,    KC_7,    KC_9,    KC_4,    KC_0,    KC_5,    KC_8,    KC_PEQL, \
-_______, KC_PSLS, KC_PAST, KC_PMNS, KC_PPLS, KC_LPRN, KC_RPRN, KC_PDOT, KC_PCMM, KC_PERC, KC_CIRC, KC_PENT, \
+_______, KC_PSLS, KC_PAST, KC_PMNS, KC_PPLS, KC_LPRN, KC_RPRN, KC_PDOT, KC_COMM, KC_PERC, KC_CIRC, KC_PENT, \
 _______, _______, _______, SET_NMM, KC_BSPC, _______, _______, SET_BSM, SET_MKM, _______, _______, _______
 
 /* Layer 2: SYMBOL (Raise)

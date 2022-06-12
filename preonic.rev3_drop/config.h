@@ -21,6 +21,8 @@
 
 #define IGNORE_MOD_TAP_INTERRUPT          // Makes it possible to do rolling combos (zx) with keys that convert to other keys on hold, by enforcing the TAPPING_TERM for both keys
 #define IGNORE_MOD_TAP_INTERRUPT_PER_KEY  // Enables handling for per key IGNORE_MOD_TAP_INTERRUPT settings
+#define HOLD_ON_OTHER_KEY_PRESS           // Makes it possible to press a dual-role key, press another key, and then release the dual-role key, all within the tapping term, but perform its hold action instead
+#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY   // Enables handling for per key HOLD_ON_OTHER_KEY_PRESS settings
 #define TAPPING_FORCE_HOLD                // Makes it possible to use a dual role key as modifier shortly after having been tapped
 #define TAPPING_FORCE_HOLD_PER_KEY        // Enables handling for per key TAPPING_FORCE_HOLD settings
 

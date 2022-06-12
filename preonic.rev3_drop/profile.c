@@ -5,31 +5,33 @@ enum preonic_layers {
     _MKW,
     _NVW,
     _FNW,
+    _LLW,
     _BSM,
     _NMM,
     _SMM,
     _MKM,
     _NVM,
-    _FNM
+    _FNM,
+    _LLM
 };
 
 enum preonic_custom_keycodes {
     LYT_WIN = SAFE_RANGE,
-    IME_WIN,
     MOV_PWW,
     MOV_NWW,
     DEL_PWW,
     DEL_LSW,
     DEL_LEW,
+    DEL_LNW,
     LYT_MAC,
-    IME_MAC,
     MOV_PWM,
     MOV_NWM,
     MOV_LSM,
     MOV_LEM,
     DEL_PWM,
     DEL_LSM,
-    DEL_LEM
+    DEL_LEM,
+    DEL_LNM
 };
 
 #define OSM_SFT OSM(MOD_LSFT)
@@ -37,7 +39,9 @@ enum preonic_custom_keycodes {
 bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case BSL_WIN:
+        case IME_CTL:
         case BSL_OPT:
+        case IME_CMD:
             return true;
 
         default:
@@ -48,11 +52,11 @@ bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case BSL_WIN:
+        case IME_CTL:
         case SPC_NVW:
-        case ENT_FNW:
         case BSL_OPT:
+        case IME_CMD:
         case SPC_NVM:
-        case ENT_FNM:
             return true;
 
         default:
@@ -73,12 +77,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
             return false;
 
-        case IME_WIN:
-            if (record->event.pressed) {
+        case IME_CTL:
+            if (record->tap.count && record->event.pressed) {
                 tap_code16(LWIN(KC_SPC));
+
+                return false;
             }
 
-            return false;
+            break;
 
         case MOV_PWW:
             if (record->event.pressed) {
@@ -117,6 +123,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
             return false;
 
+        case DEL_LNW:
+            if (record->event.pressed) {
+                tap_code(KC_END);
+                tap_code16(S(KC_HOME));
+                tap_code(KC_BSPC);
+            }
+
+            return false;
+
         case LYT_MAC:
             if (record->event.pressed) {
                 set_single_persistent_default_layer(_BSM);
@@ -125,12 +140,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
             return false;
 
-        case IME_MAC:
-            if (record->event.pressed) {
+        case IME_CMD:
+            if (record->tap.count && record->event.pressed) {
                 tap_code16(C(KC_SPC));
+
+                return false;
             }
 
-            return false;
+            break;
 
         case MOV_PWM:
             if (record->event.pressed) {
@@ -178,6 +195,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             if (record->event.pressed) {
                 tap_code16(S(LCMD(KC_RGHT)));
                 tap_code(KC_BSPC);
+            }
+
+            return false;
+
+        case DEL_LNM:
+            if (record->event.pressed) {
+                tap_code16(LCMD(KC_RGHT));
+                tap_code16(LCMD(KC_BSPC));
             }
 
             return false;

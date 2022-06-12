@@ -1,5 +1,7 @@
 #define BSL_OPT OPT_T(KC_BSLS)
+#define IME_CMD CMD_T(KC_NO)
 
+#define TAB_LLM LT(_LLM, KC_TAB)
 #define SET_BSM TO(_BSM)
 
 #define OSL_NMM OSL(_NMM)

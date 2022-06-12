@@ -1,5 +1,7 @@
 #define BSL_WIN WIN_T(KC_BSLS)
+#define IME_CTL CTL_T(KC_NO)
 
+#define TAB_LLW LT(_LLW, KC_TAB)
 #define SET_BSW TO(_BSW)
 
 #define OSL_NMW OSL(_NMW)

@@ -1,6 +1,6 @@
 # QMK Keydo
 
-A Colemak-DH based QMK firmware with ergo and programming in mind, designed for polyglots.
+A Colemak-DH based QMK firmware with ergo and programming in mind, designed for polyglots (compatible with [Keydo]).
 
 > Only one keymap is allowed for each keyboard profile.
 >
@@ -67,6 +67,7 @@ A Colemak-DH based QMK firmware with ergo and programming in mind, designed for 
 
 *For more info, please refer to [QMK Configs]*
 
+[Keydo]: https://github.com/pingshunhuangalex/rime-keydo
 [QMK MSYS]: https://github.com/qmk/qmk_distro_msys/releases/latest
 [QMK Firmware]: https://github.com/qmk/qmk_firmware
 [QMK Toolbox]: https://github.com/qmk/qmk_toolbox/releases/latest

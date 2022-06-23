@@ -1,6 +1,6 @@
 # QMK Keydo
 
-A Colemak-DH based QMK firmware with ergo, programming and multi-language input methods in mind.
+A Colemak-DH based QMK firmware with ergo and programming in mind, designed for polyglots.
 
 > Only one keymap is allowed for each keyboard profile.
 >

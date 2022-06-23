@@ -4,20 +4,18 @@ A Colemak-DH based QMK firmware with ergo and programming in mind, designed for 
 
 > Only one keymap is allowed for each keyboard profile.
 >
-> - Each folder represents a keyboard profile named in the form of `<keyboard>.<version>` that matches with profiles in [QMK Firmware]
+> - Each folder represents a keyboard profile named in the form of `<keyboard>.<version>`, which matches with keyboard profiles in [QMK Firmware]
 > - The `<keymap>` in this repo defaults to `keydo` unless specified
 >
 > *e.g. for a keyboard profile of `preonic.rev3_drop`, it has a `<keyboard>` of `preonic` and a `<version>` of `rev3_drop`*
 
----
-
-## How to use
+## Documentation
 
 <details open>
-  <summary>Windows</summary>
+  <summary><strong>Windows</strong></summary>
 
   <blockquote><details>
-    <summary>Advanced users only. Expand this section if you want to hack <code>QMK Keydo</code> and compile your own keyboard profile</summary>
+    <summary><em>Advanced users only. Expand this section if you want to hack <code>QMK Keydo</code> and compile your own keyboard profile</em></summary>
 
 - Download [QMK MSYS]
 
@@ -43,7 +41,7 @@ A Colemak-DH based QMK firmware with ergo and programming in mind, designed for 
   make clean
   ```
 
-- Compile your profile (the compiled profile will locate at `<qmk_home_path>/.build/<keyboard>_<version>_<keymap>.bin`)
+- Compile your keyboard profile (the compiled file will locate at `<qmk_home_path>/.build/<keyboard>_<version>_<keymap>.bin`)
 
   ```console
   qmk compile -kb <keyboard>/<version> -km <keymap>

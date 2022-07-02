@@ -20,14 +20,14 @@ qmk compile -kb preonic/rev3_drop -km keydo
 | DROP + INVYR Holy Panda Mechanical Switches<br>- Switch Pack: 90                                                            | $105       | $0             | $105           |
 | DROP + MITO XDA Canvas Keycap Set (1800 kit)                                                                                | $90        | $15            | $105           |
 | DROP + MITO XDA Canvas Keycap Set (ortho kit)                                                                               | $75        | $0             | $75            |
-| Preonic Case Foam (black 2mm)                                                                                               | $6         | $17.34         | $23.34         |
+| Preonic Case Foam (black 2mm)                                                                                               | $6         | $17            | $23            |
 | Preonic Plate Foam (black 4mm)                                                                                              | $9         | $0             | $9             |
 | Deskeys Switch Films                                                                                                        | $7         | $22            | $29            |
 | Krytox 205 G0                                                                                                               | $12        | $0             | $12            |
 | Krytox 205 G2                                                                                                               | $15        | $36            | $51            |
 | Krytox 105 Oil                                                                                                              | $15        | $5             | $20            |
-| KAT Mizu Themed Cable (Bloodmoon)                                                                                           | $60        | $24.5          | $84.5          |
-| **Total**                                                                                                                   | **$534**   | **$134.84**    | **$668.84**    |
+| KAT Mizu Themed Cable (Bloodmoon)                                                                                           | $60        | $25            | $85            |
+| **Total**                                                                                                                   | **$534**   | **$135**       | **$669**       |
 
 [Jack Humbert]: https://github.com/jackhumbert
 [OLKB]: https://olkb.com

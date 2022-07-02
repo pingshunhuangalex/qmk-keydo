@@ -1,6 +1,8 @@
 # DROP + OLKB PREONIC KEYBOARD MX KIT V3
 
-<img alt="Preview" width="80%" src="https://github.com/pingshunhuangalex/qmk-keydo/tree/main/.preview/preonic.rev3_drop.jpg">
+<p align="center">
+  <img alt="Preview" width="80%" src="https://github.com/pingshunhuangalex/qmk-keydo/blob/main/.preview/preonic.rev3_drop.jpg?raw=true">
+</p>
 
 Designed by [Jack Humbert] at [OLKB], the [Preonic] is a 50% (`12x5`) ortholinear keyboard made for efficiency, maintaining a very compact form factor for portability. The updated [Drop] version offers a CNC-Aluminium case, a new `ARM STM32` processor that provides more power to the `PCBA` and the `USB-C` connector, as well as `Kaihua` hotswap sockets that enable swapping out switches without soldering.
 

@@ -1,20 +1,33 @@
-# The default Preonic layout - largely based on the Planck's
+# DROP + OLKB PREONIC KEYBOARD MX KIT V3
 
-![Preonic](http://i.imgur.com/EDWQbB0.jpg)
+![Preview](https://github.com/pingshunhuangalex/qmk-keydo/tree/main/.preview/preonic.rev3_drop.jpg)
 
-A compact 50% (12x5) ortholinear keyboard kit made and sold by OLKB and Massdrop. [More info on qmk.fm](http://qmk.fm/preonic/)
+Designed by [Jack Humbert] at [OLKB], the [Preonic] is a 50% (`12x5`) ortholinear keyboard made for efficiency, maintaining a very compact form factor for portability. The updated [Drop] version offers a CNC-Aluminium case, a new `ARM STM32` processor that provides more power to the `PCBA` and the `USB-C` connector, as well as `Kaihua` hotswap sockets that enable swapping out switches without soldering.
 
-Keyboard Maintainer: [Jack Humbert](https://github.com/jackhumbert)
-Hardware Supported: Preonic PCB rev1, rev2, rev3
-Hardware Availability: [OLKB.com](https://olkb.com/preonic/), [Massdrop](https://www.massdrop.com/buy/preonic-mechanical-keyboard?mode=guest_open)
+## Build via QMK
 
-Make example for this keyboard (after setting up your build environment):
+```console
+qmk compile -kb preonic/rev3_drop -km keydo
+```
 
-    make preonic/rev2:default
+## Inventory
 
-Install examples:
+| Parts                                                                                                                       | Cost (USD) | Shipping (USD) | Subtotal (USD) |
+|-----------------------------------------------------------------------------------------------------------------------------|------------|----------------|----------------|
+| DROP + OLKB Preonic Keyboard MX Kit V3<br>- Anodised CNC aluminium case (purple)<br>- 304 brushed stainless steel top plate | $140       | $15            | $155           |
+| DROP + INVYR Holy Panda Mechanical Switches<br>- Switch Pack: 90                                                            | $105       | $0             | $105           |
+| DROP + MITO XDA Canvas Keycap Set (1800 kit)                                                                                | $90        | $15            | $105           |
+| DROP + MITO XDA Canvas Keycap Set (ortho kit)                                                                               | $75        | $0             | $75            |
+| Preonic Case Foam (black 2mm)                                                                                               | $6         | $17.34         | $23.34         |
+| Preonic Plate Foam (black 4mm)                                                                                              | $9         | $0             | $9             |
+| Deskeys Switch Films                                                                                                        | $7         | $22            | $29            |
+| Krytox 205 G0                                                                                                               | $12        | $0             | $12            |
+| Krytox 205 G2                                                                                                               | $15        | $36            | $51            |
+| Krytox 105 Oil                                                                                                              | $15        | $5             | $20            |
+| KAT Mizu Themed Cable (Bloodmoon)                                                                                           | $60        | $24.5          | $84.5          |
+| **Total**                                                                                                                   | **$534**   | **$134.84**    | **$668.84**    |
 
-    make preonic/rev2:default:dfu         # For Preonic rev1 or rev2
-    make preonic/rev3:default:dfu-util    # For Preonic rev3
-
-See the [build environment setup](https://docs.qmk.fm/#/getting_started_build_tools) and the [make instructions](https://docs.qmk.fm/#/getting_started_make_guide) for more information. Brand new to QMK? Start with our [Complete Newbs Guide](https://docs.qmk.fm/#/newbs)
+[Jack Humbert]: https://github.com/jackhumbert
+[OLKB]: https://olkb.com/preonic
+[Preonic]: https://olkb.com/collections/preonic
+[Drop]: https://drop.com/buy/preonic-mechanical-keyboard

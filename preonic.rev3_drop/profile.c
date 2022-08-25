@@ -153,7 +153,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
 
         case IME_CMD:
             if (record->tap.count && record->event.pressed) {
-                tap_code16(C(KC_SPC));
+                tap_code16(C(LOPT(KC_SPC)));
 
                 return false;
             }

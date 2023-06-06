@@ -4,7 +4,7 @@
   <img alt="Preview" width="80%" src="https://github.com/pingshunhuangalex/qmk-keydo/blob/main/.preview/preonic.rev3_drop.jpg?raw=true">
 </p>
 
-Designed by [Jack Humbert] at [OLKB], the [Preonic] is a 50% (`12x5`) ortholinear keyboard made for efficiency, maintaining a very compact form factor for portability. The updated [Drop] version offers a CNC-Aluminium case, a new `ARM STM32` processor that provides more power to the `PCBA` and the `USB-C` connector, as well as `Kaihua` hotswap sockets that enable swapping out switches without soldering.
+Designed by [Jack Humbert] at [OLKB], the [Preonic] is a 50% (`5 × 12`) ortholinear keyboard made for efficiency, maintaining a very compact form factor for portability. The updated [Drop] version offers a CNC-Aluminium case, a new `ARM STM32` processor that provides more power to the `PCBA` and the `USB-C` connector, as well as `Kaihua` hotswap sockets that enable swapping out switches without soldering.
 
 ## Build via QMK
 
@@ -16,8 +16,8 @@ qmk compile -kb preonic/rev3_drop -km keydo
 
 | Parts                                                                                                                       | Cost (USD) | Shipping (USD) | Subtotal (USD) |
 |-----------------------------------------------------------------------------------------------------------------------------|------------|----------------|----------------|
-| DROP + OLKB Preonic Keyboard MX Kit V3<br>- Anodised CNC aluminium case (purple)<br>- 304 brushed stainless steel top plate | $140       | $15            | $155           |
-| DROP + INVYR Holy Panda Mechanical Switches<br>- Switch Pack: 90                                                            | $105       | $0             | $105           |
+| DROP + OLKB Preonic Keyboard MX Kit V3<br>- Anodised CNC Aluminium case (purple)<br>- 304 brushed stainless steel top plate | $140       | $15            | $155           |
+| DROP + INVYR Holy Panda Mechanical Switches<br>- Switch pack: 90                                                            | $105       | $0             | $105           |
 | DROP + MITO XDA Canvas Keycap Set (1800 kit)                                                                                | $90        | $15            | $105           |
 | DROP + MITO XDA Canvas Keycap Set (ortho kit)                                                                               | $75        | $0             | $75            |
 | Preonic Case Foam (black 2mm)                                                                                               | $6         | $17            | $23            |

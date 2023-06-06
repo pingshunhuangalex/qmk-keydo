@@ -2,7 +2,7 @@
 # Change to "no" to disable the options, or define them in the Makefile in
 # the appropriate keymap folder that will get included automatically
 BACKLIGHT_ENABLE  = no          # Enables keyboard backlight functionality
-BOOTLOADER        = atmel-dfu   # AVR MCU Options for bootloader type
+BOOTLOADER        = atmel-dfu   # AVR MCU options for bootloader type
 BOOTMAGIC_ENABLE  = no          # Virtual DIP switch configuration
 COMMAND_ENABLE    = no          # Commands for debug and configuration
 CONSOLE_ENABLE    = no          # Console for debug

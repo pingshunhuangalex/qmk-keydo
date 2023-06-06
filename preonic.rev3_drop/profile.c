@@ -36,19 +36,6 @@ enum preonic_custom_keycodes {
 
 #define OSM_SFT OSM(MOD_LSFT)
 
-bool get_ignore_mod_tap_interrupt(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case BSL_WIN:
-        case IME_CTL:
-        case BSL_OPT:
-        case IME_CMD:
-            return true;
-
-        default:
-            return false;
-    }
-};
-
 bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case IME_CTL:
@@ -58,9 +45,9 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
         default:
             return false;
     }
-}
+};
 
-bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
+uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case BSL_WIN:
         case IME_CTL:
@@ -68,10 +55,10 @@ bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
         case BSL_OPT:
         case IME_CMD:
         case SPC_NVM:
-            return true;
+            return 0;
 
         default:
-            return false;
+            return QUICK_TAP_TERM;
     }
 };
 

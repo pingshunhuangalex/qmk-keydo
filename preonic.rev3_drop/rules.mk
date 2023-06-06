@@ -3,7 +3,7 @@ SRC += muse.c
 # Build Options
 # Change to "no" to disable the options, or define them in the Makefile in
 # the appropriate keymap folder that will get included automatically
-AUDIO_ENABLE     = yes         # Audio output - Enable the audio subsystem
+AUDIO_ENABLE     = yes         # Audio output - Enables the audio subsystem
 BACKLIGHT_ENABLE = no          # Enables keyboard backlight functionality
 BLUETOOTH_ENABLE = no          # Current options are AdafruitBLE, RN42
 BOOTMAGIC_ENABLE = no          # Virtual DIP switch configuration

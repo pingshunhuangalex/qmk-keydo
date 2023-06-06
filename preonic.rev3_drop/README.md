@@ -1,4 +1,4 @@
-# DROP + OLKB PREONIC KEYBOARD MX KIT V3
+# DROP + OLKB PREONIC KEYBOARD MX KIT v3
 
 <p align="center">
   <img alt="Preview" width="80%" src="https://github.com/pingshunhuangalex/qmk-keydo/blob/main/.preview/preonic.rev3_drop.jpg?raw=true">
@@ -16,7 +16,7 @@ qmk compile -kb preonic/rev3_drop -km keydo
 
 | Parts                                                                                                                       | Cost (USD) | Shipping (USD) | Subtotal (USD) |
 |-----------------------------------------------------------------------------------------------------------------------------|------------|----------------|----------------|
-| DROP + OLKB Preonic Keyboard MX Kit V3<br>- Anodised CNC Aluminium case (purple)<br>- 304 brushed stainless steel top plate | $140       | $15            | $155           |
+| DROP + OLKB Preonic Keyboard MX Kit v3<br>- Anodised CNC Aluminium case (purple)<br>- 304 brushed stainless steel top plate | $140       | $15            | $155           |
 | DROP + INVYR Holy Panda Mechanical Switches<br>- Switch pack: 90                                                            | $105       | $0             | $105           |
 | DROP + MITO XDA Canvas Keycap Set (1800 kit)                                                                                | $90        | $15            | $105           |
 | DROP + MITO XDA Canvas Keycap Set (ortho kit)                                                                               | $75        | $0             | $75            |

@@ -107,27 +107,27 @@ _______, _______, _______, SET_BSM, DEL_PWM, _______, _______, SET_BSM, SET_BSM,
  * ,-----------------------------------------------------------------------------------------------.
  * |       |       |       |       |       |       |       |       |       |       |       |  Del  |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Tab  | Reset | Debug |EEPRST |       | NLCK  | SLCK  | CAPS  |       | Wake  | Sleep |  Opt  |
+ * |  Tab  |       | Brt+  | CAPS  | Brt-  |       |       | Print | Menu  | Calc  |       |  Opt  |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Cmd  |  F6   |  F3   |  F1   |  F2   |  F7   |  F9   |  F4   |  F10  |  F5   |  F8   |SET_BSM|
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Esc  |LYT_WIN|       |  F11  |  F12  | Brt-  | Brt+  | Calc  | Print | Menu  | Pause | Enter |
+ * |  Esc  |LYT_WIN|       |  F11  |  F12  |       |       |       | Pause | NLCK  | SLCK  | Enter |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Esc  | Left  | Right |SET_BSM| Bksp  | Ctrl  | Shift |SET_BSM|SET_BSM| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
 #define LAYER_FNM \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
-KC_TAB,  RESET,   DEBUG,   EEP_RST, XXXXXXX, KC_NLCK, KC_SLCK, KC_CAPS, XXXXXXX, KC_WAKE, KC_SLEP, KC_LOPT, \
+KC_TAB,  XXXXXXX, KC_BRIU, KC_CAPS, KC_BRID, XXXXXXX, XXXXXXX, KC_PSCR, KC_APP,  KC_CALC, XXXXXXX, KC_LOPT, \
 KC_LCMD, KC_F6,   KC_F3,   KC_F1,   KC_F2,   KC_F7,   KC_F9,   KC_F4,   KC_F10,  KC_F5,   KC_F8,   SET_BSM, \
-_______, LYT_WIN, XXXXXXX, KC_F11,  KC_F12,  KC_BRID, KC_BRIU, KC_CALC, KC_PSCR, KC_APP,  KC_PAUS, KC_ENT, \
+_______, LYT_WIN, XXXXXXX, KC_F11,  KC_F12,  XXXXXXX, XXXXXXX, XXXXXXX, KC_PAUS, KC_NUM,  KC_SCRL, KC_ENT, \
 _______, _______, _______, SET_BSM, KC_BSPC, _______, _______, SET_BSM, SET_BSM, _______, _______, _______
 
 /* Layer 6: LAYER LOCKS (Tab)
  * ,-----------------------------------------------------------------------------------------------.
  * |       |       |       |       |       |       |       |       |       |       |       |       |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |SET_BSM|       |       |       |       |       |       |       |       |       |       |       |
+ * |SET_BSM| Boot  | EECLR | Debug | Wake  | Sleep |       |       |       |       |       |       |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |       |       |       |       |       |       |       |       |       |       |       |       |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
@@ -138,7 +138,7 @@ _______, _______, _______, SET_BSM, KC_BSPC, _______, _______, SET_BSM, SET_BSM,
  */
 #define LAYER_LLM \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
-SET_BSM, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
+SET_BSM, QK_BOOT, EE_CLR,  DB_TOGG, KC_WAKE, KC_SLEP, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, SET_FNM, \
 XXXXXXX, XXXXXXX, XXXXXXX, SET_NMM, SET_MKM, XXXXXXX, XXXXXXX, SET_NVM, SET_SMM, XXXXXXX, XXXXXXX, XXXXXXX

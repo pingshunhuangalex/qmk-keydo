@@ -2,15 +2,15 @@ enum preonic_layers {
     _BSW = 0,
     _NMW,
     _SMW,
-    _MKW,
     _NVW,
+    _MKW,
     _FNW,
     _LLW,
     _BSM,
     _NMM,
     _SMM,
-    _MKM,
     _NVM,
+    _MKM,
     _FNM,
     _LLM
 };

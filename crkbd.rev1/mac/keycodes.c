@@ -10,11 +10,11 @@
 #define OSL_SMM OSL(_SMM)
 #define SET_SMM TO(_SMM)
 
-#define BSP_MKM LT(_MKM, KC_BSPC)
-#define SET_MKM TO(_MKM)
-
 #define SPC_NVM LT(_NVM, KC_SPC)
 #define SET_NVM TO(_NVM)
+
+#define BSP_MKM LT(_MKM, KC_BSPC)
+#define SET_MKM TO(_MKM)
 
 #define ENT_FNM LT(_FNM, KC_ENT)
 #define SET_FNM TO(_FNM)

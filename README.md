@@ -41,7 +41,7 @@ A Colemak-DH based QMK firmware with ergo and programming in mind, designed for 
   make clean
   ```
 
-- Compile your keyboard profile (the compiled file will locate at `<qmk_home_path>/.build/<keyboard>_<version>_<keymap>.bin`)
+- Compile your keyboard profile (the compiled file will locate at `<qmk_home_path>/.build/<keyboard>_<version>_<keymap>.{hex, bin}`)
 
   ```console
   qmk compile -kb <keyboard>/<version> -km <keymap>
@@ -57,7 +57,7 @@ A Colemak-DH based QMK firmware with ergo and programming in mind, designed for 
 
   - Pick your keyboard's MCU (documented in each keyboard profile)
 
-  - Pick your compiled keyboard profile (use `QMK Keydo` out of the box via the ready-to-go `<keyboard>_<version>_<keymap>.bin` file in [the build folder])
+  - Pick your compiled keyboard profile (use `QMK Keydo` out of the box via the ready-to-go `<keyboard>_<version>_<keymap>.{hex, bin}` file in [the build folder])
 
   - Flash your keyboard by clicking `Flash`
 

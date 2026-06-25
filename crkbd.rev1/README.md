@@ -1,7 +1,7 @@
 # Corne (CRKBD)
 
 <p align="center">
-  <img alt="Preview" width="80%" src="https://github.com/pingshunhuangalex/qmk-keydo/blob/main/.preview/crkbd.rev1.jpg?raw=true">
+  <img alt="Preview" width="80%" src="../.preview/crkbd.rev1.jpg">
 </p>
 
 Designed by [Foostan], the [Corne] is a 40% (`3 × 6`) split keyboard with column staggered keys and 3 thumb keys, based on [Helix]. `CRKBD` stands for Corne Keyboard. It is a compact keyboard featuring per-key LED, backlight / underglow, hotswap compatibility, and OLED support.
@@ -15,8 +15,8 @@ qmk compile -kb crkbd/rev1 -km keydo
 ## Inventory
 
 | Parts                                                                                                                                                                      | Cost (USD) | Shipping (USD) | Subtotal (USD) |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------------|----------------|
-| Corne MX Hotswap v3.0.1 Assembled PCB (purple)                                                                                                                             | $200       | $56            | $256           |
+| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------- | -------------- |
+| Corne MX Hotswap v3.0.1 Assembled PCB (purple)<br>- MCU: `Elite-C` (`ATmega32U4`)                                                                                          | $200       | $56            | $256           |
 | Chieftain 42 Corne Tenting Case (black)<br>- Anodised CNC Aluminium case<br>- Anodised Aluminium top plate                                                                 | $192       | $51            | $243           |
 | Alpaca Linear Switches v2<br>- Switch pack: 70<br>- Deskeys switch films<br>- Krytox 205 G0<br>- Krytox 105 Oil                                                            | $122       | $16            | $138           |
 | KAM Li'l Dragon Keycap Set<br>- Coverak set<br>- 40s ortho icon mods set                                                                                                   | $72        | $6             | $78            |

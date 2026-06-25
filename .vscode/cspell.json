@@ -1,0 +1,12 @@
+{
+    "dictionaries": ["QMK"],
+    "dictionaryDefinitions": [
+        {
+            "name": "QMK",
+            "path": "./cspell/qmk.txt",
+            "addWords": true
+        }
+    ],
+    "ignorePaths": ["**/*.dict.yaml"],
+    "import": ["~/.config/cspell.json"]
+}

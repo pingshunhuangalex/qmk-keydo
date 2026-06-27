@@ -74,19 +74,19 @@ KC_ESC,  DEL_LSM, MOV_PWM, DEL_LNM, MOV_NWM, DEL_LEM,                           
 
 /* Layer 4: MOUSE KEYS (Backspace)
  * ,-----------------------------------------------.                          ,-----------------------------------------------.
- * |  Tab  |       |       | MsUp  |       |       |                          |       |MWLeft | MWUp  |MWRight|       |       |
+ * |  Tab  |       |       | MsUp  |       |       |                          |       |MWLeft |MWDown |MWRight|       |       |
  * |-------+-------+-------+-------+-------+-------|                          |-------+-------+-------+-------+-------+-------|
  * |  Cmd  |       |MsLeft |MsDown |MsRight|       |                          |       |MsBtn1 |MsBtn3 |MsBtn2 |       |  Opt  |
  * |-------+-------+-------+-------+-------+-------|                          |-------+-------+-------+-------+-------+-------|
- * |  Esc  |       |       |       |       |       |                          |       |MsBtn4 |MWDown |MsBtn5 |       | Enter |
+ * |  Esc  |       |       |       |       |       |                          |       |MsBtn4 | MWUp  |MsBtn5 |       | Enter |
  * `-------------------------------+-------+-------+-------.          ,-------+-------+-------+-------------------------------'
  *                                 |SET_BSM| Space | Ctrl  |          | Shift | Bksp  |SET_BSM|
  *                                 `-----------------------'          `-----------------------'
  */
 #define LAYER_MKM \
-KC_TAB,  XXXXXXX, XXXXXXX, MS_UP,   XXXXXXX, XXXXXXX,                            XXXXXXX, MS_WHLL, MS_WHLU, MS_WHLR, XXXXXXX, XXXXXXX, \
+KC_TAB,  XXXXXXX, XXXXXXX, MS_UP,   XXXXXXX, XXXXXXX,                            XXXXXXX, MS_WHLL, MS_WHLD, MS_WHLR, XXXXXXX, XXXXXXX, \
 _______, XXXXXXX, MS_LEFT, MS_DOWN, MS_RGHT, XXXXXXX,                            XXXXXXX, MS_BTN1, MS_BTN3, MS_BTN2, XXXXXXX, KC_LOPT, \
-KC_ESC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, MS_BTN4, MS_WHLD, MS_BTN5, XXXXXXX, KC_ENT, \
+KC_ESC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                            XXXXXXX, MS_BTN4, MS_WHLU, MS_BTN5, XXXXXXX, KC_ENT, \
                                     SET_BSM, KC_SPC, _______,          _______,  KC_BSPC, SET_BSM
 
 /* Layer 5: FUNCTION (Enter)

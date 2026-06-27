@@ -88,20 +88,20 @@ _______, _______, _______, SET_BSM, SET_BSM, _______, _______, DEL_PWM, SET_BSM,
  * ,-----------------------------------------------------------------------------------------------.
  * |       |       |       |       |       |       |       |       |       |       |       |  Del  |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Tab  |       |       | MsUp  |       |       |       |MWLeft | MWUp  |MWRight|       |       |
+ * |  Tab  |       |       | MsUp  |       |       |       |MWLeft |MWDown |MWRight|       |       |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Cmd  |       |MsLeft |MsDown |MsRight|       |       |MsBtn1 |MsBtn3 |MsBtn2 |       |  Opt  |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
- * |  Esc  |       |       |       |       |       |       |MsBtn4 |MWDown |MsBtn5 |       | Enter |
+ * |  Esc  |       |       |       |       |       |       |MsBtn4 | MWUp  |MsBtn5 |       | Enter |
  * |-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------+-------|
  * |  Esc  | Left  | Right |SET_BSM| Space | Ctrl  | Shift | Bksp  |SET_BSM| Down  |  Up   | Enter |
  * `-----------------------------------------------------------------------------------------------'
  */
 #define LAYER_MKM \
 XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, _______, \
-KC_TAB,  XXXXXXX, XXXXXXX, MS_UP,   XXXXXXX, XXXXXXX, XXXXXXX, MS_WHLL, MS_WHLU, MS_WHLR, XXXXXXX, XXXXXXX, \
+KC_TAB,  XXXXXXX, XXXXXXX, MS_UP,   XXXXXXX, XXXXXXX, XXXXXXX, MS_WHLL, MS_WHLD, MS_WHLR, XXXXXXX, XXXXXXX, \
 _______, XXXXXXX, MS_LEFT, MS_DOWN, MS_RGHT, XXXXXXX, XXXXXXX, MS_BTN1, MS_BTN3, MS_BTN2, XXXXXXX, KC_LOPT, \
-KC_ESC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, MS_BTN4, MS_WHLD, MS_BTN5, XXXXXXX, KC_ENT, \
+KC_ESC,  XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, MS_BTN4, MS_WHLU, MS_BTN5, XXXXXXX, KC_ENT, \
 _______, _______, _______, SET_BSM, KC_SPC,  _______, _______, KC_BSPC, SET_BSM, _______, _______, _______
 
 /* Layer 5: FUNCTION (Enter)

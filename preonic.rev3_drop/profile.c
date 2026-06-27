@@ -38,10 +38,6 @@ enum preonic_custom_keycodes {
 
 bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case IME_CTL:
-        case IME_CMD:
-            return true;
-
         default:
             return false;
     }
@@ -49,12 +45,18 @@ bool get_hold_on_other_key_press(uint16_t keycode, keyrecord_t *record) {
 
 uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case BSL_WIN:
-        case IME_CTL:
+        case BSL_MEH:
+        case TAB_HYP:
+        case BSP_MKW:
+        case ENT_FNW:
+        case ESC_LLW:
         case SPC_NVW:
-        case BSL_OPT:
-        case IME_CMD:
+        case QUO_WIN:
+        case BSP_MKM:
+        case ENT_FNM:
+        case ESC_LLM:
         case SPC_NVM:
+        case QUO_OPT:
             return 0;
 
         default:
@@ -74,15 +76,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             }
 
             return false;
-
-        case IME_CTL:
-            if (record->tap.count && record->event.pressed) {
-                tap_code16(LWIN(KC_SPC));
-
-                return false;
-            }
-
-            break;
 
         case MOV_PWW:
             if (record->event.pressed) {
@@ -137,15 +130,6 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             }
 
             return false;
-
-        case IME_CMD:
-            if (record->tap.count && record->event.pressed) {
-                tap_code16(C(LOPT(KC_SPC)));
-
-                return false;
-            }
-
-            break;
 
         case MOV_PWM:
             if (record->event.pressed) {

@@ -1,7 +1,6 @@
-#define BSL_WIN WIN_T(KC_BSLS)
-#define IME_CTL CTL_T(KC_NO)
+#define QUO_WIN WIN_T(KC_QUOT)
 
-#define TAB_LLW LT(_LLW, KC_TAB)
+#define ESC_LLW LT(_LLW, KC_ESC)
 #define SET_BSW TO(_BSW)
 
 #define OSL_NMW OSL(_NMW)

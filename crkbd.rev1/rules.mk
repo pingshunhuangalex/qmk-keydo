@@ -10,7 +10,6 @@ EXTRAKEY_ENABLE   = yes         # Enables audio control and system control
 LTO_ENABLE        = yes         # Enables Link Time Optimization (LTO) when compiling the keyboard. This makes the process take longer, but it can significantly reduce the compiled size (and since the firmware is small, the added time is not noticeable)
 MOUSEKEY_ENABLE   = yes         # Mouse keys
 NKRO_ENABLE       = yes         # Nkey Rollover - if this doesn't work, see here: https://github.com/tmk/tmk_keyboard/wiki/FAQ#nkro-doesnt-work
-OLED_DRIVER       = SSD1306     # OLED type
 OLED_ENABLE       = yes         # Enables the OLED feature
 RGB_MATRIX_ENABLE = no          # Enables RGB matrix lighting
 RGBLIGHT_ENABLE   = no          # Enables WS2812 RGB underlight - Enable keyboard underlight functionality

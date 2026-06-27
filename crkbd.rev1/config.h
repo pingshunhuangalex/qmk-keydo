@@ -16,6 +16,9 @@
 
 #pragma once
 
+#define OLED_IC OLED_IC_SSD1306           // Enables a universal subsystem and specifies the OLED integrated circuit configuration
+#define OLED_DISPLAY_128X32               // Sets the OLED screen display size
+
 #define EE_HANDS                          // Selects hand configuration, this sets the keyboard’s handedness by setting a flag in the persistent storage (EEPROM). This is checked when the controller first starts up, and determines what half the keyboard is, and how to orient the keyboard layout
 #define FORCE_NKRO                        // NKRO by default requires to be turned on, this forces it on during keyboard startup regardless of EEPROM setting. NKRO can still be turned off but will be turned on again if the keyboard reboots
 #define TAP_CODE_DELAY 10                 // Sets the delay between register_code and unregister_code, if you're having issues with it registering properly (common on VUSB boards). The value is in milliseconds

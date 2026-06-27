@@ -1,0 +1,2 @@
+#define TAB_HYP HYPR_T(KC_TAB)
+#define BSL_MEH MEH_T(KC_BSLS)

@@ -106,7 +106,7 @@ _______, KC_F6,   KC_F3,   KC_F1,   KC_F2,   KC_F7,                             
 KC_ESC,  XXXXXXX, XXXXXXX, KC_F11,  KC_F12,  XXXXXXX,                            XXXXXXX, KC_CAPS, KC_PAUS, KC_NUM,  KC_SCRL, KC_ENT, \
                                     SET_BSW, SET_BSW, _______,          _______, KC_BSPC, SET_BSW
 
-/* Layer 6: LAYER LOCKS (Tab)
+/* Layer 6: LAYER LOCKS (Esc)
  * ,-----------------------------------------------.                          ,-----------------------------------------------.
  * |SET_BSW| Boot  | EECLR | Debug | Wake  | Sleep |                          |       |       |       |       |       |       |
  * |-------+-------+-------+-------+-------+-------|                          |-------+-------+-------+-------+-------+-------|

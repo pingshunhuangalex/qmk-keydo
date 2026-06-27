@@ -1,29 +1,31 @@
 enum crkbd_layers {
-    _BSW = 0,
-    _NMW,
-    _SMW,
-    _NVW,
-    _MKW,
-    _FNW,
-    _LLW,
-    _BSM,
+    /* -------------------------------------------------------------------------------------------- */
+    /*                                          Mac Layout                                          */
+    /* -------------------------------------------------------------------------------------------- */
+    _BSM = 0,
     _NMM,
     _SMM,
     _NVM,
     _MKM,
     _FNM,
-    _LLM
+    _LLM,
+    /* -------------------------------------------------------------------------------------------- */
+    /*                                        Windows Layout                                        */
+    /* -------------------------------------------------------------------------------------------- */
+    _BSW,
+    _NMW,
+    _SMW,
+    _NVW,
+    _MKW,
+    _FNW,
+    _LLW
 };
 
 enum crkbd_custom_keycodes {
-    LYT_WIN = SAFE_RANGE,
-    MOV_PWW,
-    MOV_NWW,
-    DEL_PWW,
-    DEL_LSW,
-    DEL_LEW,
-    DEL_LNW,
-    LYT_MAC,
+    /* -------------------------------------------------------------------------------------------- */
+    /*                                          Mac Layout                                          */
+    /* -------------------------------------------------------------------------------------------- */
+    LYT_MAC = SAFE_RANGE,
     MOV_PWM,
     MOV_NWM,
     MOV_LSM,
@@ -31,7 +33,17 @@ enum crkbd_custom_keycodes {
     DEL_PWM,
     DEL_LSM,
     DEL_LEM,
-    DEL_LNM
+    DEL_LNM,
+    /* -------------------------------------------------------------------------------------------- */
+    /*                                        Windows Layout                                        */
+    /* -------------------------------------------------------------------------------------------- */
+    LYT_WIN,
+    MOV_PWW,
+    MOV_NWW,
+    DEL_PWW,
+    DEL_LSW,
+    DEL_LEW,
+    DEL_LNW
 };
 
 #define OSM_SFT OSM(MOD_LSFT)
@@ -47,16 +59,22 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case BSL_MEH:
         case TAB_HYP:
-        case BSP_MKW:
-        case ENT_FNW:
-        case ESC_LLW:
-        case SPC_NVW:
-        case QUO_WIN:
+        /* -------------------------------------------------------------------------------------------- */
+        /*                                          Mac Layout                                          */
+        /* -------------------------------------------------------------------------------------------- */
         case BSP_MKM:
         case ENT_FNM:
         case ESC_LLM:
         case SPC_NVM:
         case QUO_OPT:
+        /* -------------------------------------------------------------------------------------------- */
+        /*                                        Windows Layout                                        */
+        /* -------------------------------------------------------------------------------------------- */
+        case BSP_MKW:
+        case ENT_FNW:
+        case ESC_LLW:
+        case SPC_NVW:
+        case QUO_WIN:
             return 0;
 
         default:
@@ -66,59 +84,9 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case LYT_WIN:
-            if (record->event.pressed) {
-                set_single_persistent_default_layer(_BSW);
-            }
-
-            return false;
-
-        case MOV_PWW:
-            if (record->event.pressed) {
-                tap_code16(C(KC_LEFT));
-            }
-
-            return false;
-
-        case MOV_NWW:
-            if (record->event.pressed) {
-                tap_code16(C(KC_RGHT));
-            }
-
-            return false;
-
-        case DEL_PWW:
-            if (record->event.pressed) {
-                tap_code16(C(KC_BSPC));
-            }
-
-            return false;
-
-        case DEL_LSW:
-            if (record->event.pressed) {
-                tap_code16(S(KC_HOME));
-                tap_code(KC_BSPC);
-            }
-
-            return false;
-
-        case DEL_LEW:
-            if (record->event.pressed) {
-                tap_code16(S(KC_END));
-                tap_code(KC_BSPC);
-            }
-
-            return false;
-
-        case DEL_LNW:
-            if (record->event.pressed) {
-                tap_code(KC_END);
-                tap_code16(S(KC_HOME));
-                tap_code(KC_BSPC);
-            }
-
-            return false;
-
+        /* -------------------------------------------------------------------------------------------- */
+        /*                                          Mac Layout                                          */
+        /* -------------------------------------------------------------------------------------------- */
         case LYT_MAC:
             if (record->event.pressed) {
                 set_single_persistent_default_layer(_BSM);
@@ -180,6 +148,62 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             if (record->event.pressed) {
                 tap_code16(LCMD(KC_RGHT));
                 tap_code16(LCMD(KC_BSPC));
+            }
+
+            return false;
+
+        /* -------------------------------------------------------------------------------------------- */
+        /*                                        Windows Layout                                        */
+        /* -------------------------------------------------------------------------------------------- */
+        case LYT_WIN:
+            if (record->event.pressed) {
+                set_single_persistent_default_layer(_BSW);
+            }
+
+            return false;
+
+        case MOV_PWW:
+            if (record->event.pressed) {
+                tap_code16(C(KC_LEFT));
+            }
+
+            return false;
+
+        case MOV_NWW:
+            if (record->event.pressed) {
+                tap_code16(C(KC_RGHT));
+            }
+
+            return false;
+
+        case DEL_PWW:
+            if (record->event.pressed) {
+                tap_code16(C(KC_BSPC));
+            }
+
+            return false;
+
+        case DEL_LSW:
+            if (record->event.pressed) {
+                tap_code16(S(KC_HOME));
+                tap_code(KC_BSPC);
+            }
+
+            return false;
+
+        case DEL_LEW:
+            if (record->event.pressed) {
+                tap_code16(S(KC_END));
+                tap_code(KC_BSPC);
+            }
+
+            return false;
+
+        case DEL_LNW:
+            if (record->event.pressed) {
+                tap_code(KC_END);
+                tap_code16(S(KC_HOME));
+                tap_code(KC_BSPC);
             }
 
             return false;
